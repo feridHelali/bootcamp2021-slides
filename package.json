@@ -10,7 +10,8 @@
   "scripts": {
     "test": "gulp test",
     "start": "",
-    "build": "gulp"
+    "start:dev":"gulp serve",
+    "build:prod": "gulp"
   },
   "author": {
     "name": "Hakim El Hattab",
