@@ -9,9 +9,11 @@
   "license": "MIT",
   "scripts": {
     "test:dev": "gulp test",
-    "start": "",
+    "start": "node web.js",
     "start:dev":"gulp serve",
-    "build:prod": "gulp"
+    "build": "gulp",
+    "build:prod": "gulp",
+    "heroku-postbuild": "ng build --prod" 
   },
   "author": {
     "name": "Hakim El Hattab",
@@ -23,7 +25,8 @@
     "url": "git://github.com/hakimel/reveal.js.git"
   },
   "engines": {
-    "node": ">=10.0.0"
+    "node": "14.x",
+    "npm ":"7.10.0"
   },
   "keywords": [
     "reveal",
