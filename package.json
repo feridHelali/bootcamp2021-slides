@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "test": "gulp test",
-    "start": "gulp serve",
+    "start": "",
     "build": "gulp"
   },
   "author": {
@@ -95,5 +95,12 @@
       "no-eq-null": 2,
       "no-unused-expressions": 0
     }
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "grunt-cli": "^1.4.2",
+    "morgan": "^1.10.0",
+    "mustache": "^4.2.0",
+    "socket.io": "^4.0.1"
   }
 }
