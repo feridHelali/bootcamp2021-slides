@@ -8,7 +8,7 @@
   "module": "dist/reveal.esm.js",
   "license": "MIT",
   "scripts": {
-    "test": "gulp test",
+    "test:dev": "gulp test",
     "start": "",
     "start:dev":"gulp serve",
     "build:prod": "gulp"
@@ -31,6 +31,7 @@
     "presentation"
   ],
   "devDependencies": {
+    "grunt-cli": "^1.4.2",
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@rollup/plugin-babel": "^5.2.0",
@@ -99,7 +100,6 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "grunt-cli": "^1.4.2",
     "morgan": "^1.10.0",
     "mustache": "^4.2.0",
     "socket.io": "^4.0.1"
