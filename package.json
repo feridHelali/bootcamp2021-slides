@@ -13,7 +13,7 @@
     "start:dev":"gulp serve",
     "build-2": "gulp",
     "build:prod": "gulp",
-    "heroku-postbuild": "gulp" 
+    "heroku-postbuild-1": "gulp" 
   },
   "author": {
     "name": "Hakim El Hattab",
