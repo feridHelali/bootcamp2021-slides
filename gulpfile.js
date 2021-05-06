@@ -260,7 +260,7 @@ gulp.task('package', gulp.series('default', () =>
 
 gulp.task('reload', () => gulp.src(['*.html', '*.md'])
     .pipe(connect.reload()));
-
+/*
 gulp.task('serve', () => {
 
     connect.server({
@@ -272,11 +272,11 @@ gulp.task('serve', () => {
 
     gulp.watch(['*.html', '*.md'], gulp.series('reload'))
 
-    gulp.watch(['js/**'], gulp.series('js', 'reload', 'test'))
+    gulp.watch(['js/**'], gulp.series('js', 'reload', 'test')) */
 
-    gulp.watch(['plugin/**/plugin.js'], gulp.series('plugins', 'reload'))
+  //  gulp.watch(['plugin/**/plugin.js'], gulp.series('plugins', 'reload'))
 
-    gulp.watch([
+  /*  gulp.watch([
         'css/theme/source/*.{sass,scss}',
         'css/theme/template/*.{sass,scss}',
     ], gulp.series('css-themes', 'reload'))
@@ -288,4 +288,5 @@ gulp.task('serve', () => {
 
     gulp.watch(['test/*.html'], gulp.series('test'))
 
-})
+
+})*/
