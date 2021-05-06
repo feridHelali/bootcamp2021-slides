@@ -11,9 +11,9 @@
     "test:dev": "gulp test",
     "start": "node web.js",
     "start:dev":"gulp serve",
-    "build": "gulp",
+    "build-2": "gulp",
     "build:prod": "gulp",
-    "heroku-postbuild": "gulp" 
+    "heroku-postbuild-1": "gulp" 
   },
   "author": {
     "name": "Hakim El Hattab",
