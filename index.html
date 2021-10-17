@@ -1,54 +1,45 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
 
-    <title>Bootcamp MEAN Stack</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <link rel="stylesheet" href="dist/reset.css" />
-    <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
-    <link
-      rel="stylesheet"
-      href="plugin/highlight/monokai.css"
-      id="highlight-theme"
-    />
-  </head>
+  <title>Bootcamp MEAN Stack</title>
 
-  <body>
-    <div class="reveal">
-      <div class="slides">
+  <link rel="stylesheet" href="dist/reset.css" />
+  <link rel="stylesheet" href="dist/reveal.css" />
+  <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+  <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme" />
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
       <!-- Slide 1 intro -->
-        <section>
-          <h3>MEAN Stack Bootcamp Index</h3>
-          <ul>
-            <li><a href="./bootcamp/html5/index.html">HTML5</a></li>
-            <li><a href="./bootcamp/css3/index.html">CSS3</a></li>
-            <li>
-              <a href="./bootcamp/">Javascript - Core Programming / Vanilla </a>
-            </li>
-            <li><a href="./bootcamp/typescript/index.html">Typescript</a></li>
-            <li><a href="./bootcamp/nodejs/index.html">Nodejs</a></li>
-            <li>
-              <a href="./bootcamp/fp-javascript/index.html"
-                >Programmation Fonctionnelle - Javascript</a
-              >
-            </li>
-            <li>
-              <a href="./bootcamp/mongodb/index.html"
-                >MongoDb - Base de Donnée NoSql (Not Only SQL)</a
-              >
-            </li>
-            <li><a href="./bootcamp/mongoose/index.html">Mongoose - ODM</a></li>
-            <li><a href="./bootcamp/angular/index.html">Angular 11</a></li>
-            <li><a href="./bootcamp/projects/index.html">Projets</a></li>
-          </ul>
-          <aside class="notes">
-            <textarea>
+      <section>
+        <h3>MEAN Stack Bootcamp Index</h3>
+        <ul>
+          <li><a href="./bootcamp/aboutus/index.html">Présentation des formateurs</a></li>
+          <li><a href="./bootcamp/html5/index.html">HTML5</a></li>
+          <li><a href="./bootcamp/css3/index.html">CSS3</a></li>
+          <li>
+            <a href="./bootcamp/javascript/index.html">Javascript - Core Programming / Vanilla </a>
+          </li>
+          <li><a href="./bootcamp/typescript/index.html">Typescript</a></li>
+          <li><a href="./bootcamp/nodejs/index.html">Nodejs</a></li>
+          <li>
+            <a href="./bootcamp/fp-javascript/index.html">Programmation Fonctionnelle - Javascript</a>
+          </li>
+          <li>
+            <a href="./bootcamp/mongodb/index.html">MongoDb - Base de Donnée NoSql (Not Only SQL)</a>
+          </li>
+          <li><a href="./bootcamp/mongoose/index.html">Mongoose - ODM</a></li>
+          <li><a href="./bootcamp/angular/index.html">Angular 11</a></li>
+          <li><a href="./bootcamp/projects/index.html">Projets</a></li>
+        </ul>
+        <aside class="notes">
+          <textarea>
 							# Tours d'horizon du programme du Bootcamp
 
 							1 - Context de la pile de dévéloppement web
@@ -61,26 +52,25 @@
 
 							4 - Y'a t'il d'autre forme de dévéloppment (Oui Os, Embarqué, Réseau, Desktop, Mobile)
 					</textarea>
-          </aside>
-        </section>
-        <section>Slide 2</section>
-      </div>
+        </aside>
+      </section>
     </div>
+  </div>
 
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
-    <script src="plugin/search/search.js"></script>
-    <script src="plugin/zoom/zoom.js"></script>
-    <script src="plugin/math/math.js"></script>
-    <script>
-            // More info about initialization & config:
-            // - https://revealjs.com/initialization/
-            // - https://revealjs.com/config/
-            Reveal.initialize({
-      		  // Display presentation control arrows
-      	controls: true,
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script src="plugin/search/search.js"></script>
+  <script src="plugin/zoom/zoom.js"></script>
+  <script src="plugin/math/math.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      // Display presentation control arrows
+      controls: true,
 
       // Help the user learn the controls by providing hints, for example by
       // bouncing the down arrow when they first encounter a vertical slide
@@ -238,38 +228,39 @@
 
       // The display mode that will be used to show slides
       display: 'block',
-              hash: true,
+      hash: true,
 
-              // Learn about plugins: https://revealjs.com/plugins/
-              plugins: [RevealMarkdown, RevealHighlight, RevealNotes,RevealSearch,RevealMath,RevealZoom],
-              dependencies: [
-                // Interpret Markdown in <section> elements
-                {
-                  src: 'plugin/markdown/marked.js',
-                  condition: function () {
-                    return !!document.querySelector('[data-markdown]')
-                  }
-                },
-                {
-                  src: 'plugin/markdown/markdown.js',
-                  condition: function () {
-                    return !!document.querySelector('[data-markdown]')
-                  }
-                },
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealSearch, RevealMath, RevealZoom],
+      dependencies: [
+        // Interpret Markdown in <section> elements
+        {
+          src: 'plugin/markdown/marked.js',
+          condition: function () {
+            return !!document.querySelector('[data-markdown]')
+          }
+        },
+        {
+          src: 'plugin/markdown/markdown.js',
+          condition: function () {
+            return !!document.querySelector('[data-markdown]')
+          }
+        },
 
-                // Syntax highlight for <code> elements
-                { src: 'plugin/highlight/highlight.js', async: true },
+        // Syntax highlight for <code> elements
+        { src: 'plugin/highlight/highlight.js', async: true },
 
-                // Zoom in and out with Alt+click
-                { src: 'plugin/zoom-js/zoom.js', async: true },
+        // Zoom in and out with Alt+click
+        { src: 'plugin/zoom-js/zoom.js', async: true },
 
-                // Speaker notes
-                { src: 'plugin/notes/notes.js', async: true },
+        // Speaker notes
+        { src: 'plugin/notes/notes.js', async: true },
 
-                // MathJax
-                { src: 'plugin/math/math.js', async: true }
-              ]
-            })
-    </script>
-  </body>
+        // MathJax
+        { src: 'plugin/math/math.js', async: true }
+      ]
+    })
+  </script>
+</body>
+
 </html>

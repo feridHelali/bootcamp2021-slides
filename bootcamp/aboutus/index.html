@@ -1,27 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angular Index</title>
+    <title>Qui sommes-nous Index</title>
     <link rel="stylesheet" href="../../dist/reset.css" />
-	<link rel="stylesheet" href="../../dist/reveal.css" />
-	<link rel="stylesheet" href="../../dist/theme/black.css" id="theme" />
-	<link rel="stylesheet" href="../../plugin/highlight/monokai.css" id="highlight-theme" />
+    <link rel="stylesheet" href="../../dist/reveal.css" />
+    <link rel="stylesheet" href="../../dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="../../plugin/highlight/monokai.css" id="highlight-theme" />
 </head>
+
 <body>
     <div class="reveal">
-        <div class="slide">
-            <section>Angular Module Index<section>
+        <div class="slides">
+            <section>
+                <ul>
+                    <li><a href="./khalil.html">NASRALLAH Mohamed Khelil</a></li>
+                    <li><a href="./ferid.html">HELALI Ferid</a></li>   
+                </ul>
+            </section>
         </div>
-    </div>
 
+    </div>
     <script src="../../dist/reveal.js"></script>
     <script src="../../plugin/notes/notes.js"></script>
     <script src="../../plugin/markdown/markdown.js"></script>
     <script src="../../plugin/highlight/highlight.js"></script>
+    <script src="../../plugin/zoom/zoom.js"></script>
+    <script src="../../plugin/search/search.js"></script>
     <script>
         // More info about initialization & config:
         // - https://revealjs.com/initialization/
@@ -30,8 +38,9 @@
             hash: true,
 
             // Learn about plugins: https://revealjs.com/plugins/
-            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+            plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
         });
     </script>
 </body>
-      </html>
+
+</html>
