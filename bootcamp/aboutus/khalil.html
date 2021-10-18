@@ -9,12 +9,12 @@
 
     <title>Bootcamp MEAN Stack</title>
 
-    <link rel="stylesheet" href="dist/reset.css" />
-    <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="../../dist/reset.css" />
+    <link rel="stylesheet" href="../../dist/reveal.css" />
+    <link rel="stylesheet" href="../../dist/theme/black.css" id="theme" />
     <link
       rel="stylesheet"
-      href="plugin/highlight/monokai.css"
+      href="../../plugin/highlight/monokai.css"
       id="highlight-theme"
     />
   </head>
@@ -23,57 +23,84 @@
     <div class="reveal">
       <div class="slides">
       <!-- Slide 1 intro -->
-        <section>
-          <h3>MEAN Stack Bootcamp Index</h3>
-          <ul>
-            <li><a href="./bootcamp/html5/index.html">HTML5</a></li>
-            <li><a href="./bootcamp/css3/index.html">CSS3</a></li>
-            <li>
-              <a href="./bootcamp/">Javascript - Core Programming / Vanilla </a>
-            </li>
-            <li><a href="./bootcamp/typescript/index.html">Typescript</a></li>
-            <li><a href="./bootcamp/nodejs/index.html">Nodejs</a></li>
-            <li>
-              <a href="./bootcamp/fp-javascript/index.html"
-                >Programmation Fonctionnelle - Javascript</a
-              >
-            </li>
-            <li>
-              <a href="./bootcamp/mongodb/index.html"
-                >MongoDb - Base de Donnée NoSql (Not Only SQL)</a
-              >
-            </li>
-            <li><a href="./bootcamp/mongoose/index.html">Mongoose - ODM</a></li>
-            <li><a href="./bootcamp/angular/index.html">Angular 11</a></li>
-            <li><a href="./bootcamp/projects/index.html">Projets</a></li>
-          </ul>
-          <aside class="notes">
-            <textarea>
-							# Tours d'horizon du programme du Bootcamp
-
-							1 - Context de la pile de dévéloppement web
-							2 - Citer aure pile de developpment web (LAMP, Java/JS, C # /js, Python/js)
-							3 - ```javascript
-								If There is a skill, there is a way
-
-							```
-
-
-							4 - Y'a t'il d'autre forme de dévéloppment (Oui Os, Embarqué, Réseau, Desktop, Mobile)
-					</textarea>
-          </aside>
+        <section style="display: flex;flex-direction: row;">
+      
+          <img src="images/upgrade-code.webp" 
+              style="background-color: azure;
+                    height: 500;width:100%;
+                    border-radius: 2em .5em .5em 2em;
+                    opacity: .9;
+                    padding:17px;
+                    margin:10px">
         </section>
-        <section>Slide 2</section>
+        <section style="display: flex;flex-direction: row;">
+          <div style="align-items: flex-start;">
+          <img src="images/khalil.png" style="height: 250px;border-radius: 50%;">
+        </div>
+          <div>
+            <h2>Mohamed Khalil NASRALLAH</h2>
+            <p>Professeur, Developpeur Logiciel et Formateur</p>
+          </div> 
+        </section>
+         <!-- Slide 7 intro -->
+         <section>
+          <h2>Formation MEAN Stack</h2>
+          <ul>
+            <li>Mongodb</li>
+            <li>Express</li>
+            <li>Angular</li>
+            <li>Nodejs</li>
+          </ul>
+      </section>
+
+      <!-- Slide 8 intro -->
+      <section>
+          <h2>Modules</h2>
+       <table>
+         <thead>
+         <tr><td>Module</td><td>Volume</td></tr>
+         <tbody>
+           <tr>
+             <td>M1-HTML</td>
+             <td>105h</td>
+           </tr>
+           <tr>
+             <td>M2-CSS</td>
+             <td>35h</td>
+           </tr>
+           <tr>
+             <td>M5-Mongodb</td>
+             <td>70h</td>
+           </tr>
+           <tr>
+             <td>M8-Typescript</td>
+             <td>35h</td>
+           </tr>
+           <tr>
+             <td>M10-Mongoose</td>
+             <td>35h</td>
+           </tr>
+           <tr>
+             <td>M11-Autres CSS</td>
+             <td>17.5h</td>
+           </tr>
+         </tbody>
+         <tfoot></tfoot>
+       </table>
+      </section>
+
+       
+       
       </div>
     </div>
 
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
-    <script src="plugin/search/search.js"></script>
-    <script src="plugin/zoom/zoom.js"></script>
-    <script src="plugin/math/math.js"></script>
+    <script src="../../dist/reveal.js"></script>
+    <script src="../../plugin/notes/notes.js"></script>
+    <script src="../../plugin/markdown/markdown.js"></script>
+    <script src="../../plugin/highlight/highlight.js"></script>
+    <script src="../../plugin/search/search.js"></script>
+    <script src="../../plugin/zoom/zoom.js"></script>
+    <script src="../../plugin/math/math.js"></script>
     <script>
             // More info about initialization & config:
             // - https://revealjs.com/initialization/
@@ -245,29 +272,29 @@
               dependencies: [
                 // Interpret Markdown in <section> elements
                 {
-                  src: 'plugin/markdown/marked.js',
+                  src: '../../plugin/markdown/marked.js',
                   condition: function () {
                     return !!document.querySelector('[data-markdown]')
                   }
                 },
                 {
-                  src: 'plugin/markdown/markdown.js',
+                  src: '../../plugin/markdown/markdown.js',
                   condition: function () {
                     return !!document.querySelector('[data-markdown]')
                   }
                 },
 
                 // Syntax highlight for <code> elements
-                { src: 'plugin/highlight/highlight.js', async: true },
+                { src: '../../plugin/highlight/highlight.js', async: true },
 
                 // Zoom in and out with Alt+click
-                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: '../../plugin/zoom-js/zoom.js', async: true },
 
                 // Speaker notes
-                { src: 'plugin/notes/notes.js', async: true },
+                { src: '../../plugin/notes/notes.js', async: true },
 
                 // MathJax
-                { src: 'plugin/math/math.js', async: true }
+                { src: '../../plugin/math/math.js', async: true }
               ]
             })
     </script>

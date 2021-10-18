@@ -9,13 +9,12 @@
 
     <title>Bootcamp MEAN Stack</title>
 
-  
-    <link rel="stylesheet" href="../../dist/reset.css" />
-    <link rel="stylesheet" href="../../dist/reveal.css" />
-    <link rel="stylesheet" href="../../dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
     <link
       rel="stylesheet"
-      href="../../plugin/highlight/monokai.css"
+      href="plugin/highlight/monokai.css"
       id="highlight-theme"
     />
   </head>
@@ -34,8 +33,6 @@
                     padding:17px;
                     margin:10px">
         </section>
-
-        <!-- Slide 2 intro -->
         <section style="display: flex;flex-direction: row;">
           <div style="align-items: flex-start;">
           <img src="images/ferid.png" style="height: 250px;border-radius: 50%;">
@@ -48,86 +45,33 @@
           </div>
           
         </section>
-
-        <!-- Slide 3 intro -->
         <section>
             <h2>J' <img src="images/love.png" style="height: 70px;margin:auto;padding:auto">
             Javascript</h2>
         </section>
-
-        <!-- Slide 4 intro -->
         <section>
             <h2>J' <img src="images/love.png" style="height: 70px;margin:auto;padding:auto">
             Javascript</h2>
         </section>
-
-        <!-- Slide 5 intro -->
         <section>
             <h2>J' <img src="images/love.png" style="height: 70px;margin:auto;padding:auto">
             Javascript</h2>
         </section>
-
-        <!-- Slide 6 intro -->
         <section>
             <h2>J' <img src="images/love.png" style="height: 70px;margin:auto;padding:auto">
             Javascript</h2>
             <p>...resistance est inutile</p>
         </section>
-
-        <!-- Slide 7 intro -->
-        <section>
-            <h2>Formation MEAN Stack</h2>
-            <ul>
-              <li>Mongodb</li>
-              <li>Express</li>
-              <li>Angular</li>
-              <li>Nodejs</li>
-            </ul>
-        </section>
-
-        <!-- Slide 8 intro -->
-        <section>
-            <h2>Modules</h2>
-         <table>
-           <thead>
-           <tr><td>Module</td><td>Volume</td></tr>
-           <tbody>
-             <tr>
-               <td>M3-Programmation Fonctionnelle</td>
-               <td>35h</td>
-             </tr>
-             <tr>
-               <td>M4-Anguar</td>
-               <td>143.5h</td>
-             </tr>
-             <tr>
-               <td>M6-Nodejs</td>
-               <td>49h</td>
-             </tr>
-             <tr>
-               <td>M7-Javascript</td>
-               <td>35h</td>
-             </tr>
-             <tr>
-               <td>M9-Exressjs</td>
-               <td>35h</td>
-             </tr>
-           </tbody>
-           <tfoot></tfoot>
-         </table>
-        </section>
-
-       
       </div>
     </div>
 
-    <script src="../../dist/reveal.js"></script>
-    <script src="../../plugin/notes/notes.js"></script>
-    <script src="../../plugin/markdown/markdown.js"></script>
-    <script src="../../plugin/highlight/highlight.js"></script>
-    <script src="../../plugin/search/search.js"></script>
-    <script src="../../plugin/zoom/zoom.js"></script>
-    <script src="../../plugin/math/math.js"></script>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/search/search.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/math/math.js"></script>
     <script>
             // More info about initialization & config:
             // - https://revealjs.com/initialization/
@@ -299,29 +243,29 @@
               dependencies: [
                 // Interpret Markdown in <section> elements
                 {
-                  src: '../../plugin/markdown/marked.js',
+                  src: 'plugin/markdown/marked.js',
                   condition: function () {
                     return !!document.querySelector('[data-markdown]')
                   }
                 },
                 {
-                  src: '../../plugin/markdown/markdown.js',
+                  src: 'plugin/markdown/markdown.js',
                   condition: function () {
                     return !!document.querySelector('[data-markdown]')
                   }
                 },
 
                 // Syntax highlight for <code> elements
-                { src: '../../plugin/highlight/highlight.js', async: true },
+                { src: 'plugin/highlight/highlight.js', async: true },
 
                 // Zoom in and out with Alt+click
-                { src: '../../plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
 
                 // Speaker notes
-                { src: '../../plugin/notes/notes.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true },
 
                 // MathJax
-                { src: '../../plugin/math/math.js', async: true }
+                { src: 'plugin/math/math.js', async: true }
               ]
             })
     </script>
