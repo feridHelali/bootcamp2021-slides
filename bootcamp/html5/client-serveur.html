@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Initiation</title>
+    <link rel="stylesheet" href="../../dist/reset.css" />
+    <link rel="stylesheet" href="../../dist/reveal.css" />
+    <link rel="stylesheet" href="../../dist/theme/black.css" id="theme" />
+    <link
+      rel="stylesheet"
+      href="../../plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!--Slide 1 -->
+        <section>
+          <h3>Architecture Internet</h3>
+          <img src="assets/Internet-client-serveur.jpg" width="100%" />
+        </section>
+        <section>
+          <h3>Notion de Client/Serveur</h3>
+          <img src="assets/client-serveur.png" width="100%" />
+          <aside class="notes">
+            L'architecture client/serveur désigne un mode de communication entre plusieurs ordinateurs d'un réseau qui distingue un ou plusieurs postes clients du serveur : chaque logiciel client peut envoyer des requêtes à un serveur. Un serveur peut être spécialisé en serveur d'applications, de fichiers, de terminaux, ou encore de messagerie électronique.
+Caractéristiques d'un serveur :
+•	il est passif (ou maître) ;
+•	il est à l'écoute, prêt à répondre aux requêtes envoyées par des clients ;
+•	dès qu'une requête lui parvient, il la traite et envoie une réponse.
+Caractéristiques d'un client :
+•	il est actif (ou esclave) ;
+•	il envoie des requêtes au serveur ;
+•	il attend et reçoit les réponses du serveur.
+Le client et le serveur doivent bien sûr utiliser le même protocole de communication. Un serveur est généralement capable de servir plusieurs clients simultanément.
+Un autre type d'architecture réseau est le poste à poste (ou peer-to-peer en anglais), dans lequel chaque ordinateur ou logiciel est à la fois client et serveur
+
+          </aside>
+        </section>
+        <section>
+          <h3>Front-end et Back-end</h3>
+          <img src="assets/front-vs-back1.jpg" width="100%" />
+          <aside class="note">
+            26 JUIN QUELLE EST LA DIFFÉRENCE ENTRE DÉVELOPPEMENT BACK END, FRONT END ET FULL STACK ?
+Le jargon professionnel du web est riche et bien que nous essayions souvent de vulgariser nos propos, quelques petits mots se glissent parfois de-ci de-là. C’est notamment le cas des termes Front End, Back End.
+Si vous avez ouvert de grands yeux interrogateurs en entendant ces mots, alors cet article est fait pour vous ! Nous allons en effet mettre en évidence les différences entre le développement Front End et le développement Back End.
+LE DÉVELOPPEMENT FRONT END
+Le terme « frontend » désigne les éléments d’un site que l’on voit à l’écran et avec lesquels on peut interagir depuis un navigateur. En effet, tout ce qu’on voit sur un site internet par exemple, est une combinaison de HTML, CSS et JavaScript. Ces langages de programmation utilisés par le développeur Front End sont interprétés par le navigateur de votre ordinateur pour afficher un résultat « visuel ». Il s’agit notamment de polices, de menus déroulants, de boutons, de transitions, de curseurs, de formulaires de contact, etc.
+Le Frontend se compose généralement :
+•	D’un design créé par un Web designer qui réalise des maquettes graphiques via des outils de création comme Photoshop ou Fireworks.
+•	De code HTML, CSS, JavaScript et jQuery mis en place par un développeur Frontend.
+Maintenant, pour que le travail du développeur Front End prenne vie et que le site soit fonctionnel, il manque encore quelques éléments. C’est là qu’entre en scène le développeur Back End !
+LE DÉVELOPPEMENT BACK END
+Le « backend » est un peu comme la partie immergée d’un iceberg. On ne la voit pas en tant que simple Internaute mais elle représente une très grande partie d’un projet web.
+Le Backend se compose généralement de trois éléments :
+•	Un serveur (hébergement web)
+•	Une application (site web, administration)
+•	Une base de données (sorte de feuille de calcul pour organiser les données)
+Prenons un exemple pour comprendre le fonctionnement du Back End : Imaginons que vous deviez réserver un vol en ligne pour vos futures vacances. Vous vous rendez sur le site de la compagnie aérienne et recherchez le vol qui vous convient. Une fois le vol sélectionné, vous renseignez vos informations personnelles et validez votre réservation. Vos informations sont alors enregistrées dans une base de données stockée sur un serveur.
+Toutes ces informations restent sur le serveur, alors quand vient l’heure des vacances (2 mois plus tard) vous vous connectez à l’espace client (application) pour imprimer vos billets d’avion et toutes les informations que vous aviez renseignées lors de votre réservation sont disponibles sur votre compte.
+La personne qui administre toute cette technologie est le développeur back end. Les technologies Backend se composent généralement de langages comme PHP, Ruby, Python, etc. Pour les rendre encore plus faciles à utiliser, ils sont généralement améliorés par des Framework comme Ruby on Rails, Cake PHP, Symfony et Code Igniter qui rendent le développement plus rapide et plus sécurisé.
+De plus en plus de développeurs disposent à la fois de compétences en backend et en frontend. On les appelle développeurs Full Stack.
+LE DÉVELOPPEMENT FULL STACK
+Le développeur full-stack maîtrise les principales technologies et les principaux langages de programmation actuels. Il est ainsi capable d’intervenir aussi bien sur le front end que sur le back end des sites Internet ou des applications. Il peut de ce fait être amené à travailler sur des missions très différentes les unes des autres.
+Le développeur full stack est très apprécié par les start-ups pour ses compétences variées. Toutefois, pour des projets d’envergure, il est conseillé de faire appel aux compétences spécifiques des développeurs frontend et backend.
+ 
+POUR ALLER PLUS LOIN : NE PAS CONFONDE FRONT END ET FRONTOFFICE OU BACK END ET BACK OFFICE
+Nous sommes régulièrement témoins de la confusion entre les termes front end / FrontOffice et back end / BackOffice.
+Le FrontOffice désigne ce que voit l’internaute en navigant sur un site internet.
+Le BackOffice désigne quant à lui ce que voit l’administrateur du site quand il se connecte à l’administration.
+Le CMS WordPress est un bon exemple pour comprendre la différence entre ces différents termes. En effet, il s’agit d’un outil web basé sur un Framework open source construit en PHP qui s’installe sur un serveur avec une base de données (Back End). Les développeurs Front End personnalisent l’apparence et les fonctionnalités des sites WordPress en utilisant du CSS, du jQuery et du JavaScript. Ces modifications se font principalement depuis le BackOffice (depuis l’interface de WordPress). Ces modifications sont ensuite visibles par les internautes sur le FrontOffice du site (le site internet).
+CONCLUSION
+Les développeurs Front-End et Back-End ont des profils complémentaires qui permettent de par leurs compétences spécifiques de mener à bien des projets web de grande envergure. Le développeur full stack est quant à lui idéal pour la création de site internet et les projets de faible ampleur.
+L’expertise Némésis studio
+Les différents types de développements exposés ci-dessus nécessitent un savoir-faire spécifique. Pour vous accompagner dans votre projet, nous vous invitons à contacter les développeurs Full Stack Némésis studio.
+
+
+          </aside>
+        </section>
+        <section>
+          <h3>Front-end et Back-end</h3>
+          <img src="assets/front-vs-back2.png" width="100%" />
+        </section>
+
+        <section>
+            <h3>Equipe de développement</h3>
+            <img src="assets/dev-team.png" />
+        </section>
+        
+    </div>
+    </div>
+    <script src="../../dist/reveal.js"></script>
+    <script src="../../plugin/notes/notes.js"></script>
+    <script src="../../plugin/markdown/markdown.js"></script>
+    <script src="../../plugin/highlight/highlight.js"></script>
+    <script src="../../plugin/zoom/zoom.js"></script>
+    <script src="../../plugin/search/search.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+          RevealZoom,
+          RevealNotes,
+          RevealSearch,
+          RevealMarkdown,
+          RevealHighlight,
+        ],
+      });
+    </script>
+  </body>
+</html>
