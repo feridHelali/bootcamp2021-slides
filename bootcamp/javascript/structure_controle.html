@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction au cours Index</title>
+    <link rel="stylesheet" href="../../dist/reset.css" />
+    <link rel="stylesheet" href="../../dist/reveal.css" />
+    <link rel="stylesheet" href="../../dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="../../plugin/highlight/monokai.css" id="highlight-theme" />
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h3>JavaScript: Structure des Données et Transfert de Contrôle</h3>
+            </section>
+
+            <section>
+                <h3>Définitions</h3>
+            </section>
+
+            <section>
+                <h3>Paradigmes de Programmation</h3>
+                <p>
+                    Un paradigme de programmation est une façon d'approcher la programmation informatique
+                    et de traiter les solutions aux problèmes et leur formulation dans un langage de
+                    programmation approprié.
+                    Il s'oppose à la méthodologie, qui est une manière d'organiser la solution des problèmes
+                    spécifiques du génie logiciel.
+                </p>
+            </section>
+
+            <section>
+                <h3>Séquences</h3>
+                <p>
+                    Une séquence est un ensemble d’instructions exécutées les unes après les autres.
+                    Un code source est un ensemble d’instructions dont la séquence est l’ordre dans
+                    lequel il a été écrit. Le processeur le lira ensuite dans l’ordre du début à la fin,
+                    exécutant le code au fur et à mesure (Top-Down).
+                </p>
+            </section>
+
+            <section>
+                <h3>Séquences exemple</h3>
+                <pre><code style="font-size: 2rem;">
+        let radius=10;
+        let surface = Math.pi * (radius ** 2);
+        console.log(radius);
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Selections</h3>
+                <p>
+                    Une sélection est une instruction conditionnelle. Nous pouvons faire quelque
+                    chose à une machine et arrêter de faire quelque chose, mais nous pouvons aussi dire
+                    à la machine quand arrêter de faire ce processus lorsqu’une certaine
+                    condition (ou conditions) est remplie. Cela peut être fait avec une instruction
+                    if ou swich . Ceci indique une condition qui doit être remplie et indique ensuite
+                    à la machine ce que vous voulez qu’elle fasse.
+                </p>
+            </section>
+
+            <section>
+                <h3>Selections exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+isStarted = true;
+if ( isStartd ){
+   // Do Staff
+}
+                    </code>
+                </pre>
+            </section>
+            <section>
+                <h3>Selections exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+
+isStarted = true;
+if ( isStarted ) {
+   // Do Staff
+} else {
+   // Do another Staff
+}
+ </code>
+                </pre>
+            </section>
+            <section>
+                <h3>Selections exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+isStarted = true;
+if ( isStartd ){
+   // Do Staff
+} else if ( anotherCondition ) {
+       // Do Extra-Staff
+}
+                 </code>
+                </pre>
+            </section>
+            <section>
+                <h3>Selections exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+switch(expression) {
+    case x:
+        // code block
+        break;
+    case y:
+        // code block
+        break;
+    default:
+        // code block
+    }
+                 </code>
+                </pre>
+            </section>
+
+            <section>
+                <h3>Itérations</h3>
+                <p>
+                    Cela nous permet de répéter un bloc d’instructions un certain nombre de fois tant 
+                    que une condition est vraie.
+                </p>
+            </section>
+
+            <section>
+                <h3>Itérartions exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+// 1.
+for (let i = 1; i <= 5; i++){
+    // Do Staff
+}
+                 </code>
+                </pre>
+            </section>
+            <section>
+                <h3>Itérartions exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+// 2.
+for (iteror of iterable){
+    // Do some processing with iterator
+}
+                 </code>
+                </pre>
+            </section>
+            <section>
+                <h3>Itérartions exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+// 3.
+for (property in object){
+    // Do some processing with property
+}
+                 </code>
+                </pre>
+            </section>
+            <section>
+                <h3>Itérartions exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+// 4.
+while( conditionEvaluatedToTrue ){
+    // Do Staff
+}
+                 </code>
+                </pre>
+            </section>
+            <section>
+                <h3>Itérartions exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+// 5.
+do {
+        // Do Staff
+}while( conditionEvaluatedToTrue );
+                    
+                 </code>
+                </pre>
+            </section>
+            <section>
+                <h3>Itérartions exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+    /**
+    * 6. Array.forEach ,Array.map , Array.reduce,
+    *    Array.filter, Array.every, Array.some ...
+    *    (fp Style)
+    */
+                 </code>
+                </pre>
+            </section>
+
+
+        </div>
+    </div>
+    <script src="../../dist/reveal.js"></script>
+    <script src="../../plugin/notes/notes.js"></script>
+    <script src="../../plugin/markdown/markdown.js"></script>
+    <script src="../../plugin/highlight/highlight.js"></script>
+    <script src="../../plugin/zoom/zoom.js"></script>
+    <script src="../../plugin/search/search.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+        });
+    </script>
+</body>
+
+</html>
