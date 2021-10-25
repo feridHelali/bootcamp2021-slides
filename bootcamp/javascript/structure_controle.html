@@ -321,15 +321,12 @@ let mySet = new Set([iterable])
             <pre><code>
 let northAficanCountries =[ 'Tunisia','Algeria','Maroc',
                             'Libya','Moritania','Egypt'  ];
-
 for (let i=0 ; i < northAficanCountries.length ; i++){
         console.log( northAficanCountries[i] );
 }
-
 for (country  of northAficanCountries ){
         console.log( country );
 }
-
 northAficanCountries.forEach( function( country ) {
         return console.log( country );
     }
