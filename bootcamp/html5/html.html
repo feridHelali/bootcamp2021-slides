@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Initiation</title>
+    <link rel="stylesheet" href="../../dist/reset.css" />
+    <link rel="stylesheet" href="../../dist/reveal.css" />
+    <link rel="stylesheet" href="../../dist/theme/black.css" id="theme" />
+    <link
+      rel="stylesheet"
+      href="../../plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!--Slide 1 -->
+        <section><!-- ************************* -->
+          <h3>Le langage HTML</h3>
+          <img
+            src="https://blog.soat.fr/wp-content/uploads/2015/01/HTML5.png"
+          />
+        </section>
+        <section><!-- ************************* -->
+          <h3>Définitions</h3>
+          <p>Wikipedia :</p>
+          <blockquote>
+            &ldquo;Le HyperText Markup Language, généralement abrégé HTML ou,
+            dans sa dernière version, HTML5, est le langage de balisage conçu
+            pour représenter les pages web..&rdquo;
+          </blockquote>
+        </section>
+        <section><!-- ************************* -->
+          <h3>Définitions</h3>
+          <p>Journal Du Net :</p>
+          <blockquote>
+            &ldquo;L'HyperText Markup Language, HTML, désigne un type de langage
+            informatique descriptif. Il s'agit plus précisément d'un format de
+            données utilisé dans l'univers d'Internet pour la mise en forme des
+            pages Web. Il permet, entre autres, d'écrire de l'hypertexte, mais
+            aussi d'introduire des ressources multimédias dans un
+            contenu.&rdquo;
+          </blockquote>
+        </section>
+        <section><!-- ************************* -->
+          <h3>Définitions</h3>
+          <p>infoWebMaster :</p>
+          <blockquote>
+            &ldquo;L'HTML est un langage informatique utilisé sur l'internet. Ce
+            langage est utilisé pour créer des pages web. L'acronyme signifie
+            HyperText Markup Language, ce qui signifie en français "langage de
+            balisage d'hypertexte". Cette signification porte bien son nom
+            puisqu'effectivement ce langage permet de réaliser de l'hypertexte à
+            base d'une structure de balisage.&rdquo;
+          </blockquote>
+        </section>
+        <section><!-- ************************* -->
+          <h2>Les versions de HTML</h2>
+          <ul>
+            <li>HTML 1 : 1991 (Tim Berners-Lee).</li>
+            <li>HTML 2 : 1994 --> 1996 les bases des versions suivantes du HTML, les règles
+          et le fonctionnement de cette version sont donnés par le W3C.</li>
+            <li>HTML 3 : 1996 --> 1998 nombreuses possibilités ont été ajoutées au langage (les tableaux, les scripts, le positionnement du texte autour des images, etc).</li>
+          </ul>
+        
+        </section>
+        <section><!-- ************************* -->
+          <h2>Les versions de HTML (suite)</h2>
+          <ul>
+            <li>HTML 4 : 1998 --> 2010 (frames, des tableaux plus complexes,
+               des améliorations sur les formulaires, etc). 
+               Cette version permet pour la première fois d'exploiter des feuilles de style, notre fameux CSS !</li>
+            <li>HTML 5 : Possibilité d'inclure facilement des vidéos, un meilleur
+          agencement du contenu, de nouvelles fonctionnalités pour les formulaires, etc. C'est cette version que
+          nous allons découvrir ensemble.</li>
+          </ul>
+        
+        </section>
+        <section><!-- ************************* -->
+          <h2>Structure d'un fichier HTML</h2>
+          <pre><code class="html">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+      
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                &lt;/body&gt;
+            &lt;/html&gt;
+          </code></pre>
+        </section>
+      </div>
+    </div>
+    <script src="../../dist/reveal.js"></script>
+    <script src="../../plugin/notes/notes.js"></script>
+    <script src="../../plugin/markdown/markdown.js"></script>
+    <script src="../../plugin/highlight/highlight.js"></script>
+    <script src="../../plugin/zoom/zoom.js"></script>
+    <script src="../../plugin/search/search.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+          RevealZoom,
+          RevealNotes,
+          RevealSearch,
+          RevealMarkdown,
+          RevealHighlight,
+        ],
+      });
+    </script>
+  </body>
+</html>

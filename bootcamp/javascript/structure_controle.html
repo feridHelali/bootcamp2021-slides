@@ -33,6 +33,22 @@
                     spécifiques du génie logiciel.
                 </p>
             </section>
+            <section>
+                <h3>Language de Programmation</h3>
+                <q>
+                    The only way to learn (to Study) to code is to write a lot of code
+                    <br>
+                    La seule façon d'apprendre (d'étudier) à coder est d'écrire beaucoup de code
+                </q>
+            </section>
+            <section>
+                <h3>Language de Programmation</h3>
+                <q>
+                    Don't imitate, understand.
+                    <br>
+                    N'imitez pas, comprenez.
+                </q>
+            </section>
 
             <section>
                 <h3>Séquences</h3>
@@ -48,7 +64,7 @@
                 <h3>Séquences exemple</h3>
                 <pre><code style="font-size: 2rem;">
         let radius=10;
-        let surface = Math.pi * (radius ** 2);
+        let surface = Math.PI * (radius ** 2);
         console.log(radius);
                 </code></pre>
             </section>
@@ -124,7 +140,7 @@ switch(expression) {
             <section>
                 <h3>Itérations</h3>
                 <p>
-                    Cela nous permet de répéter un bloc d’instructions un certain nombre de fois tant 
+                    Cela nous permet de répéter un bloc d’instructions un certain nombre de fois tant
                     que une condition est vraie.
                 </p>
             </section>
@@ -196,6 +212,127 @@ do {
     */
                  </code>
                 </pre>
+            </section>
+
+            <section>
+                <h3>Structure de donnée en Javascript</h3>
+                <ul>
+                    <li>Objet "key:value pairs"</li>
+                    <li>Les Collections Indexées: Tableaux 'Arrays'</li>
+                    <li>Les Collections avec clés: Maps, Sets, WeakMaps, WeakSets</li>
+                    <li>Les données structurées: JSON
+                        <span style="font-size: .7em;">
+                            (Javascript Object notation)
+                        </span>
+                    </li>
+                    <li>Objets globaux standard</li>
+                    <li>Objets de contrôle d'abstraction</li>
+                    <li>Introspection</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Structure de donnée en Javascript</h4>
+                <h5>Object</h5>
+                <pre>
+                      <code>
+// {key:vaule,....} pairs
+const config = {
+    baseUrl : 'http:localhost:3000',
+    user : 'user@domaine.ext',
+    paswword : 'secret password'
+}
+</code>
+</pre>
+                <p>It works like dict, or lookupTable</p>
+                <pre><code>
+    config['baseUrl'] ---> 'http:localhost:3000'
+    config.user ---> 'user@domaine.ext'
+</code></pre>
+            </section>
+            <section>
+                <h4>Structure de donnée en Javascript</h4>
+                <h5>Les Collections indexées</h5>
+                <pre>
+                      <code>
+// Array
+let operatingSystems=['MS Windows','Linux','MacOS X']
+let JSkeyWords=['let','const','var','for','if','switch']
+let domElements = [ 
+  {type:'p', content:'SomeWords'},
+  {type:'h1',content:'HeaderSample',style:{color:'blue'}},
+];
+//Get
+operatingSystems[0] --> 'MS Windows';
+domElemens[0] --> {type:'p', content:'SomeWords'}
+
+        </code>
+        </pre>
+            </section>
+            <section>
+                <h4>Structure de donnée en Javascript</h4>
+                <h5>Map (dictionnaire)</h5>
+                <pre>
+                      <code>
+// Map (dictionnaire)
+let myMap = new Map(); //OR
+let myMap = new Map([iterable]) 
+// iterable is an array of key/value 
+// ex:[['win','Windows'],[lin,'linux']]
+                      </code>
+                </pre>
+            </section>
+            <section>
+                <h4>Structure de donnée en Javascript</h4>
+                <h5>Set (ensemble)</h5>
+                <aside class='notes'>
+                    SET: Can only store unique values, 
+     And does not maintain order
+- HashSet can have null, order is not guaranteed
+- LinkedHashSet can have null and keeps the order 
+- TreeSet sorts the order and don't accept null 
+
+       
+MAP : is a (key-value format) 
+      and keys are always unique, 
+      and value can be duplicated. 
+- HashTable don't have null key, sychronized(thread-safe)
+- LinkedHashMap can have null key, keeps order
+- HasHMap can have null key, order is not guaranteed
+- TreeMap doesn't have null key and keys are sorted
+                </aside>
+                <pre>
+                      <code>
+let mySet = new Set(); //OR
+let mySet = new Set([iterable]) 
+// iterable is an array 
+// ex:['Windows','linux']
+                      </code>
+                </pre>
+            </section>
+            <section>
+                <h4>Structure de donnée en Javascript</h4>
+                <h5>Map vs Set</h5>
+                 <a href="https://javascript.info/map-set">
+                    <span>https://javascript.info/map-set</span>
+                </a>
+            </section>
+            <section>
+                <h4>Tableaux et les itérations</h4>
+            <pre><code>
+let northAficanCountries =[ 'Tunisia','Algeria','Maroc',
+                            'Libya','Moritania','Egypt'  ];
+for (let i=0 ; i < northAficanCountries.length ; i++){
+        console.log( northAficanCountries[i] );
+}
+for (country  of northAficanCountries ){
+        console.log( country );
+}
+northAficanCountries.forEach( function( country ) {
+        return console.log( country );
+    }
+);
+            </code></pre>
+                
             </section>
 
 

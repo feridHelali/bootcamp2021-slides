@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions I</title>
+    <link rel="stylesheet" href="../../dist/reset.css" />
+    <link rel="stylesheet" href="../../dist/reveal.css" />
+    <link rel="stylesheet" href="../../dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="../../plugin/highlight/monokai.css" id="highlight-theme" />
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h3>JavaScript: Functions I</h3>
+            </section>
+
+            <section>
+                <h3>Définition</h3>
+            </section>
+            <section>
+                <h3>Une fonction en Action</h3>
+                <pre><code>
+let stock = [ 
+  {id : 1, label : 'Télévision', price:1300, stock : 15},
+  {id : 2, label : 'Réfrigérateur', price:1800, stock : 7}     
+];
+
+function getProductById(id,productList){
+    return productList.filter(
+        function(product){
+            return product.id===id;
+        }
+    );
+}
+
+//function invocation
+console.log(getProductById(2,stock));
+                </code></pre>
+            </section>
+            <section>
+                <h3>Différents types de fonctions</h3>
+                <p>Une fonction nommée est une fonction avec un nom de fonction</p>
+<pre><code>
+function foo() {};
+// ou en utilisant la notation de flèche de ECMAScript 2015
+const foo = () => {};       
+</code></pre>
+            </section>
+            <section>
+                <h3>Différents types de fonctions</h3>
+                <p>Une fonction anonyme est une fonction sans nom</p>
+            <pre><code>
+function () {};
+// ou en utilisant la notation de flèche de ECMAScript 2015
+() => {};        
+            </code></pre>
+            </section>
+            <section>
+                <h3>Différents types de fonctions</h3>
+                <p style="font-size: .7em;">
+                    Une fonction imbriquée (ou fonction interne) est une fonction à l’intérieur 
+                    d’une autre fonction (square dans l’exemple suivant). Une fonction externe 
+                    est une fonction qui contient une fonction (addSquares dans l’exemple suivant)
+                </p>
+<pre><code>
+function addSquares(a,b) {
+    function square(x) {
+        return x * x;
+    }
+    return square(a) + square(b);
+};
+
+//En utilisant la notation de flèche de ECMAScript 2015
+const addSquares = (a,b) => {
+    const square = x => x*x;
+    return square(a) + square(b);
+};
+     
+</code></pre>
+            </section>
+            <section>
+                <h3>Différents types de fonctions</h3>
+                <p style="font-size: .7em;">
+                    Une fonction récursive est une fonction qui fait appel à elle-même.
+                </p>
+<pre><code>
+function loop(x) {
+    if (x >= 10)
+        return;
+    loop(x + 1);
+    };
+
+
+//En utilisant la notation de flèche de ECMAScript 2015
+const loop = x => {
+    if (x >= 10)
+        return;
+    loop(x + 1);
+};  
+</code></pre>
+            </section>
+            <section>
+                <h3>Différents types de fonctions</h3>
+                <p style="font-size: .7em;">
+                    Une expression de fonction invoquée immédiatement (IIFE) est une fonction appelée 
+                    directement après le chargement de la fonction dans le compilateur du navigateur. 
+                    La façon d’identifier une IIFE est de localiser les parenthèses gauche et droite 
+                    supplémentaires à la fin de la déclaration de la fonction.
+                </p>
+<pre><code>
+(function foo() {
+    console.log("Hello Foo");
+}());
+
+(function doStaff(args){
+    // processing staff here
+})(parameter)  
+</code></pre>
+            </section>
+
+
+
+        </div>
+    </div>
+    <script src="../../dist/reveal.js"></script>
+    <script src="../../plugin/notes/notes.js"></script>
+    <script src="../../plugin/markdown/markdown.js"></script>
+    <script src="../../plugin/highlight/highlight.js"></script>
+    <script src="../../plugin/zoom/zoom.js"></script>
+    <script src="../../plugin/search/search.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+        });
+    </script>
+</body>
+
+</html>
