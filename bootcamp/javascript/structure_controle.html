@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction au cours Index</title>
+    <link rel="stylesheet" href="../../dist/reset.css" />
+    <link rel="stylesheet" href="../../dist/reveal.css" />
+    <link rel="stylesheet" href="../../dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="../../plugin/highlight/monokai.css" id="highlight-theme" />
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h3>JavaScript: Structure des Données et Transfert de Contrôle</h3>
+            </section>
+
+            <section>
+                <h3>Définitions</h3>
+            </section>
+
+            <section>
+                <h3>Paradigmes de Programmation</h3>
+                <p>
+                    Un paradigme de programmation est une façon d'approcher la programmation informatique
+                    et de traiter les solutions aux problèmes et leur formulation dans un langage de
+                    programmation approprié.
+                    Il s'oppose à la méthodologie, qui est une manière d'organiser la solution des problèmes
+                    spécifiques du génie logiciel.
+                </p>
+            </section>
+            <section>
+                <h3>Language de Programmation</h3>
+                <q>
+                    The only way to learn (to Study) to code is to write a lot of code
+                    <br>
+                    La seule façon d'apprendre (d'étudier) à coder est d'écrire beaucoup de code
+                </q>
+            </section>
+            <section>
+                <h3>Language de Programmation</h3>
+                <q>
+                    Don't imitate, understand.
+                    <br>
+                    N'imitez pas, comprenez.
+                </q>
+            </section>
+
+            <section>
+                <h3>Séquences</h3>
+                <p>
+                    Une séquence est un ensemble d’instructions exécutées les unes après les autres.
+                    Un code source est un ensemble d’instructions dont la séquence est l’ordre dans
+                    lequel il a été écrit. Le processeur le lira ensuite dans l’ordre du début à la fin,
+                    exécutant le code au fur et à mesure (Top-Down).
+                </p>
+            </section>
+
+            <section>
+                <h3>Séquences exemple</h3>
+                <pre><code style="font-size: 2rem;">
+        let radius=10;
+        let surface = Math.PI * (radius ** 2);
+        console.log(radius);
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Selections</h3>
+                <p>
+                    Une sélection est une instruction conditionnelle. Nous pouvons faire quelque
+                    chose à une machine et arrêter de faire quelque chose, mais nous pouvons aussi dire
+                    à la machine quand arrêter de faire ce processus lorsqu’une certaine
+                    condition (ou conditions) est remplie. Cela peut être fait avec une instruction
+                    if ou swich . Ceci indique une condition qui doit être remplie et indique ensuite
+                    à la machine ce que vous voulez qu’elle fasse.
+                </p>
+            </section>
+
+            <section>
+                <h3>Selections exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+isStarted = true;
+if ( isStartd ){
+   // Do Staff
+}
+                    </code>
+                </pre>
+            </section>
+            <section>
+                <h3>Selections exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+
+isStarted = true;
+if ( isStarted ) {
+   // Do Staff
+} else {
+   // Do another Staff
+}
+ </code>
+                </pre>
+            </section>
+            <section>
+                <h3>Selections exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+isStarted = true;
+if ( isStartd ){
+   // Do Staff
+} else if ( anotherCondition ) {
+       // Do Extra-Staff
+}
+                 </code>
+                </pre>
+            </section>
+            <section>
+                <h3>Selections exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+switch(expression) {
+    case x:
+        // code block
+        break;
+    case y:
+        // code block
+        break;
+    default:
+        // code block
+    }
+                 </code>
+                </pre>
+            </section>
+
+            <section>
+                <h3>Itérations</h3>
+                <p>
+                    Cela nous permet de répéter un bloc d’instructions un certain nombre de fois tant
+                    que une condition est vraie.
+                </p>
+            </section>
+
+            <section>
+                <h3>Itérartions exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+// 1.
+for (let i = 1; i <= 5; i++){
+    // Do Staff
+}
+                 </code>
+                </pre>
+            </section>
+            <section>
+                <h3>Itérartions exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+// 2.
+for (iteror of iterable){
+    // Do some processing with iterator
+}
+                 </code>
+                </pre>
+            </section>
+            <section>
+                <h3>Itérartions exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+// 3.
+for (property in object){
+    // Do some processing with property
+}
+                 </code>
+                </pre>
+            </section>
+            <section>
+                <h3>Itérartions exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+// 4.
+while( conditionEvaluatedToTrue ){
+    // Do Staff
+}
+                 </code>
+                </pre>
+            </section>
+            <section>
+                <h3>Itérartions exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+// 5.
+do {
+        // Do Staff
+}while( conditionEvaluatedToTrue );
+                    
+                 </code>
+                </pre>
+            </section>
+            <section>
+                <h3>Itérartions exemple</h3>
+                <pre>
+                    <code style="font-size: 1em;">
+    /**
+    * 6. Array.forEach ,Array.map , Array.reduce,
+    *    Array.filter, Array.every, Array.some ...
+    *    (fp Style)
+    */
+                 </code>
+                </pre>
+            </section>
+
+            <section>
+                <h3>Structure de donnée en Javascript</h3>
+                <ul>
+                    <li>Objet "key:value pairs"</li>
+                    <li>Les Collections Indexées: Tableaux 'Arrays'</li>
+                    <li>Les Collections avec clés: Maps, Sets, WeakMaps, WeakSets</li>
+                    <li>Les données structurées: JSON
+                        <span style="font-size: .7em;">
+                            (Javascript Object notation)
+                        </span>
+                    </li>
+                    <li>Objets globaux standard</li>
+                    <li>Objets de contrôle d'abstraction</li>
+                    <li>Introspection</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Structure de donnée en Javascript</h4>
+                <h5>Object</h5>
+                <pre>
+                      <code>
+// {key:vaule,....} pairs
+const config = {
+    baseUrl : 'http:localhost:3000',
+    user : 'user@domaine.ext',
+    paswword : 'secret password'
+}
+</code>
+</pre>
+                <p>It works like dict, or lookupTable</p>
+                <pre><code>
+    config['baseUrl'] ---> 'http:localhost:3000'
+    config.user ---> 'user@domaine.ext'
+</code></pre>
+            </section>
+            <section>
+                <h4>Structure de donnée en Javascript</h4>
+                <h5>Les Collections indexées</h5>
+                <pre>
+                      <code>
+// Array
+let operatingSystems=['MS Windows','Linux','MacOS X']
+let JSkeyWords=['let','const','var','for','if','switch']
+let domElements = [ 
+  {type:'p', content:'SomeWords'},
+  {type:'h1',content:'HeaderSample',style:{color:'blue'}},
+];
+//Get
+operatingSystems[0] --> 'MS Windows';
+domElemens[0] --> {type:'p', content:'SomeWords'}
+
+        </code>
+        </pre>
+            </section>
+            <section>
+                <h4>Structure de donnée en Javascript</h4>
+                <h5>Map (dictionnaire)</h5>
+                <pre>
+                      <code>
+// Map (dictionnaire)
+let myMap = new Map(); //OR
+let myMap = new Map([iterable]) 
+// iterable is an array of key/value 
+// ex:[['win','Windows'],[lin,'linux']]
+                      </code>
+                </pre>
+            </section>
+            <section>
+                <h4>Structure de donnée en Javascript</h4>
+                <h5>Set (ensemble)</h5>
+                <aside class='notes'>
+                    SET: Can only store unique values, 
+     And does not maintain order
+- HashSet can have null, order is not guaranteed
+- LinkedHashSet can have null and keeps the order 
+- TreeSet sorts the order and don't accept null 
+
+       
+MAP : is a (key-value format) 
+      and keys are always unique, 
+      and value can be duplicated. 
+- HashTable don't have null key, sychronized(thread-safe)
+- LinkedHashMap can have null key, keeps order
+- HasHMap can have null key, order is not guaranteed
+- TreeMap doesn't have null key and keys are sorted
+                </aside>
+                <pre>
+                      <code>
+let mySet = new Set(); //OR
+let mySet = new Set([iterable]) 
+// iterable is an array 
+// ex:['Windows','linux']
+                      </code>
+                </pre>
+            </section>
+            <section>
+                <h4>Structure de donnée en Javascript</h4>
+                <h5>Map vs Set</h5>
+                 <a href="https://javascript.info/map-set">
+                    <span>https://javascript.info/map-set</span>
+                </a>
+            </section>
+            <section>
+                <h4>Tableaux et les itérations</h4>
+            <pre><code>
+let northAficanCountries =[ 'Tunisia','Algeria','Maroc',
+                            'Libya','Moritania','Egypt'  ];
+for (let i=0 ; i < northAficanCountries.length ; i++){
+        console.log( northAficanCountries[i] );
+}
+for (country  of northAficanCountries ){
+        console.log( country );
+}
+northAficanCountries.forEach( function( country ) {
+        return console.log( country );
+    }
+);
+            </code></pre>
+                
+            </section>
+
+
+        </div>
+    </div>
+    <script src="../../dist/reveal.js"></script>
+    <script src="../../plugin/notes/notes.js"></script>
+    <script src="../../plugin/markdown/markdown.js"></script>
+    <script src="../../plugin/highlight/highlight.js"></script>
+    <script src="../../plugin/zoom/zoom.js"></script>
+    <script src="../../plugin/search/search.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+        });
+    </script>
+</body>
+
+</html>
