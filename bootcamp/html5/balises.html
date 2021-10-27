@@ -1,59 +1,297 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Structure HTML</title>
-    <link rel="stylesheet" href="../../dist/reset.css" />
-    <link rel="stylesheet" href="../../dist/reveal.css" />
-    <link rel="stylesheet" href="../../dist/theme/black.css" id="theme" />
-    <link
-      rel="stylesheet"
-      href="../../plugin/highlight/monokai.css"
-      id="highlight-theme"
-    />
-  </head>
 
-  <body>
-    <div class="reveal">
-      <div class="slides">
-         <section>
-             <h2>//TODO:Imbrication</h2>
-         </section>
-         <section>
-            <h2>//TODO:Balises en paires</h2>
-        </section>
-         <section>
-            <h2>//TODO:Balises orphelines</h2>
-        </section>
-         <section>
-            <h2>//TODO:Balises inline/bloc</h2>
-        </section>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Initiation</title>
+  <link rel="stylesheet" href="../../dist/reset.css" />
+  <link rel="stylesheet" href="../../dist/reveal.css" />
+  <link rel="stylesheet" href="../../dist/theme/black.css" id="theme" />
+  <link rel="stylesheet" href="../../plugin/highlight/monokai.css" id="highlight-theme" />
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- ************************************************************ -->
+      <section>
+        <h2>Les balises HTML</h2>
+        <h3>Les balises peuvent avoir plusieurs formes :</h3>
+        <ul>
+          <li>
+            &lt;balise&gt; &lt;/balise&gt; : elles s'ouvrent et se ferment
+            pour délimiter le contenu
+          </li>
+          <li>
+            &lt;balise /&gt; : balises orphelines, elles permettent d'insérer
+            un élément à un endroit précis (par exemple un retour à la ligne,
+            une image...).
+          </li>
+        </ul>
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h2>Les balises block et inline</h2>
+        <p>La plupart des balises peuvent se ranger dans l'une ou l'autre de deux catégories :</p>
+
+        <ul>
+          <li>
+            <strong>block :</strong> Une balise de type block sur votre page web crée automatiquement un retour à la
+            ligne
+            avant et après.
+          </li>
+          <li>
+            <strong>inline :</strong> Une balise de type inline se trouve obligatoirement à l'intérieur d'une balise
+            block.
+            Une balise inline ne crée pas de retour à la ligne.
+          </li>
+        </ul>
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h2>Les balises &lt;Hx&gt;</h2>
+        <p>
+          Les balises h1, h2, h3, h4, h5 et h6 servent à renseigner les titres
+          d'un document de manière hiérarchisée
+        </p>
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h2>Les balises &lt;Hx&gt; (suite)</h2>
+        <ul>
+          <li>
+            &lt;h1&gt; &lt;/h1&gt; : signifie « titre très important ». En
+            général, on s'en sert pour afficher le titre de la page au début
+            de celle-ci.
+          </li>
+          <li>&lt;h2&gt; &lt;/h2&gt; : signifie « titre important ».</li>
+          <li>
+            &lt;h3&gt; &lt;/h3&gt; : pareil, c'est un titre un peu moins
+            important (on peut dire un « sous-titre » si vous voulez)
+          </li>
+          <li>&lt;h4&gt; &lt;/h4&gt; : titre encore moins important.</li>
+          <li>&lt;h5&gt; &lt;/h5&gt; : titre pas important.</li>
+          <li>
+            &lt;h6&gt; &lt;/h6&gt; : titre vraiment, mais alors là vraiment
+            pas important du tout
+          </li>
+        </ul>
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h2>Les balises &lt;Hx&gt; (suite)</h2>
+        <img src="assets/h1-a-h6.jpg" />
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h2>La balise &lt;p&gt; </h2>
+        <p>C'est une balise permettant de contenir un paragraphe.</p>
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h2>Les balises de mise en évidence &lt;b&gt; et &lt;strong&gt;</h2>
+
+        Elles définissent la police en gras.
+        <ul>
+          <li>
+            La balise &lt;b&gt; est une balise de balisage physique qui met en évidence le texte sans accentuer son
+            importance.
+          </li>
+          <li>
+            La balise &lt;strong&gt; identifie le texte qui revêt une importance particulière.
+            Le contenu de la balise a beaucoup de poids pour les moteurs de recherche.
+          </li>
+        </ul>
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h2>Les balises de mise en évidence &lt;i&gt; et &lt;em&gt;</h2>
+        Elles définissent la police en italique.
+        <ul>
+          <li>
+            La balise &lt;i&gt; est une balise de balisage physique et met en évidence le texte sans accentuer son
+            importance.
+          </li>
+          <li>
+            La balise &lt;em&gt; identifie le texte qui revêt une importance particulière.
+            Elle met en valeur de manière expressive et émotionnelle un morceau de texte.
+          </li>
+        </ul>
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h2>La balise de mise en évidence &lt;mark&gt;</h2>
+        <p>Visuellement, c'est comme si le contenu de l’élément est marqué avec un marqueur.</p>
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h2>Les balises de mise en évidence (exemple)</h2>
+        <pre><code>
+        &lt;p&gt;
+            Cette reunion dans laquelle nous etudions 
+            le langage &lt;strong&gt;HTML&lt;/strong&gt; 
+            entre  dans le cadre d'un bootcamp organisé 
+            par le &lt;em&gt;PSEJ&lt;/em&gt; destiné 
+            à de &lt;mark&gt;jeunes diplômés Sénégalais&lt;/mark&gt;.
+        &lt;/p&gt;
+        </code></pre>
+        <img src="assets/mise-en-evidence.jpg" />
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h2>Les balises &lt;sup&gt; et &lt;sub&gt;</h2>
+        <ul>
+          <li>
+            La balise &lt;sup&gt; permet de mettre son contenu en exposant.
+          </li>
+          <li>
+            La balise &lt;sub&gt; permet de mettre son contenu en indice.
+          </li>
+        </ul>
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h2>Les balises &lt;sup&gt; et &lt;sub&gt; (Exemple)</h2>
+        <pre><code>
+        &lt;p&gt;
+          f(x) = x&lt;sup&gt;3&lt;/sup&gt; + 3x&lt;sup&gt;2&lt;/sup&gt; + 5
+        &lt;/p&gt;
+        &lt;p&gt;
+          La formule chimique de l'éthanol est 
+          C&lt;sub&gt;2&lt;/sub&gt;H&lt;sub&gt;5&lt;/sub&gt;OH
+        &lt;/p&gt;
+      </code></pre>
+        <img src="assets/exposant-indice.jpg" />
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h2>Les balises de listes</h2>
+        <ul>
+          <li>
+            La balise &lt;ol&gt; (Ordered List) permet d'envelopper une liste ordonnée.
+          </li>
+          <li>
+            La balise &lt;ul&gt; (Unordered List) permet d'envelopper une liste désordonnée.
+          </li>
+          <li>
+            La balise &lt;dl&gt; (Description List) permet d'envelopper une liste de définitions.
+          </li>
+        </ul>
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h2>Les balises de listes (suite)</h2>
+        <ul>
+          <li>
+            Le contenu d'un élément &lt;ol&gt; est une suite d'éléments &lt;li&gt; (List Item).
+          </li>
+          <li>
+            Le contenu d'un élément &lt;ul&gt; est une suite d'éléments &lt;li&gt; (List Item).
+          </li>
+          <li>
+            Le contenu d'un élément &lt;dl&gt; est une suite de couples d'éléments &lt;dt&gt; (Description Term) et
+            &lt;dd&gt; (Description Definition).
+          </li>
+        </ul>
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h3>Les balises &lt;ol&gt; et &lt;li&gt; (Exemple)</h3>
+        <pre>
+          <code>
+            &lt;p&gt;Modules du Bootcamp : &lt;/p&gt;
+            &lt;ol&gt;
+                &lt;li&gt; HTML &lt;/li&gt;
+                &lt;li&gt; CSS &lt;/li&gt;
+                &lt;li&gt; Javascript &lt;/li&gt;
+                &lt;li&gt; ... &lt;/li&gt;
+            &lt;/ol&gt;
+          </code>
+        </pre>
+        <img src="assets/ol-exemple.jpg" />
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h3>Les balises &lt;ul&gt; et &lt;li&gt; (Exemple)</h3>
+        <pre>
+          <code>
+            &lt;p&gt;MEAN Stack : &lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt; MongoDB &lt;/li&gt;
+                &lt;li&gt; ExpressJs &lt;/li&gt;
+                &lt;li&gt; Angular &lt;/li&gt;
+                &lt;li&gt; NodeJs &lt;/li&gt;
+            &lt;/ul&gt;
+          </code>
+        </pre>
+        <img src="assets/ul-exemple.jpg" />
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h3>Les balises &lt;dl&gt;, &lt;dt&gt; et &lt;dd&gt; (Exemple)</h3>
+        <pre>
+          <code>
+            &lt;p&gt;Quelques définitions : &lt;/p&gt;
+            &lt;dl&gt;
+                &lt;dt&gt; HTML &lt;/dt&gt;
+                &lt;dd&gt; C'est un langage de balisage &lt;/dd&gt;
+                &lt;dt&gt; Bootstrap &lt;/dt&gt;
+                &lt;dd&gt; C'est un framework de styles &lt;/dd&gt;
+                &lt;dt&gt; MongoDB &lt;/dt&gt;
+                &lt;dd&gt; C'est une base de données NoSQL orientée 
+                document &lt;/dd&gt;
+            &lt;/dl&gt;
+          </code>
+        </pre>
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h3>Les balises &lt;dl&gt;, &lt;dt&gt; et &lt;dd&gt; (Exemple)</h3>
+        <img src="assets/dl-exemple.jpg" />
+      </section>
+      <section>
+        <h3>Les balises &lt;table&gt;, &lt;tr&gt; et &lt;td&gt; </h3>
+        <ul>
+          <li>
+            La balise &lt;table&gt; permet d'envelopper tout le tableau.
+          </li>
+          <li>
+            La balise &lt;tr&gt; (Table Row) permet d'envelopper toutes les données d'un ligne.
+          </li>
+          <li>
+            La balise &lt;td&gt; (Table Data) permet d'envelopper le contenu d'une cellule.
+          </li>
+        </ul>
+      </section>
     </div>
-    <script src="../../dist/reveal.js"></script>
-    <script src="../../plugin/notes/notes.js"></script>
-    <script src="../../plugin/markdown/markdown.js"></script>
-    <script src="../../plugin/highlight/highlight.js"></script>
-    <script src="../../plugin/zoom/zoom.js"></script>
-    <script src="../../plugin/search/search.js"></script>
-    <script>
-      // More info about initialization & config:
-      // - https://revealjs.com/initialization/
-      // - https://revealjs.com/config/
-      Reveal.initialize({
-        hash: true,
+  </div>
 
-        // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [
-          RevealZoom,
-          RevealNotes,
-          RevealSearch,
-          RevealMarkdown,
-          RevealHighlight,
-        ],
-      });
-    </script>
-  </body>
+
+  <script src="../../dist/reveal.js"></script>
+  <script src="../../plugin/notes/notes.js"></script>
+  <script src="../../plugin/markdown/markdown.js"></script>
+  <script src="../../plugin/highlight/highlight.js"></script>
+  <script src="../../plugin/zoom/zoom.js"></script>
+  <script src="../../plugin/search/search.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [
+        RevealZoom,
+        RevealNotes,
+        RevealSearch,
+        RevealMarkdown,
+        RevealHighlight,
+      ],
+    });
+  </script>
+</body>
+
 </html>
