@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulaires</title>
+  <link rel="stylesheet" href="../../dist/reset.css" />
+  <link rel="stylesheet" href="../../dist/reveal.css" />
+  <link rel="stylesheet" href="../../dist/theme/black.css" id="theme" />
+  <link rel="stylesheet" href="../../plugin/highlight/monokai.css" id="highlight-theme" />
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- ************************************************************ -->
+      <section>
+        <h2>Les formulaires HTML</h2>
+        <h3>Un formulaire HTML est utilisé pour collecter des informations de la part de l'utilisateur. Ces
+          dernières sont dans la plupart des cas envoyées à un serveur en vue d'être traitées.</h3>
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h2>L'élément &lt;form&gt;</h2>
+        <p>Est utilisé pour créer un formulaire.</p>
+        <p>L'élément &lt;form&gt; est une enveloppe des différents contrôles utilisés dans le formulaire, tels que zones
+          de texte, cases à cocher, boutons radio, listes de choix ...</p>
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h4>Principaux attributs de la balise &lt;form&gt;</h4>
+        <ul>
+          <li> <span style="color:yellow">name</span> : définit le nom du formulaire.</li>
+          <li> <span style="color:yellow">id</span> : définit l'dentifiant.</li>
+          <li> <span style="color:yellow">action</span> : définit l'action à entreprendre quand le formulaire est
+            soumis.</li>
+          <li> <span style="color:yellow">method</span> : définit la méthode d'envoi des données du formulaire
+            (GET/POST).</li>
+          <li> <span style="color:yellow">autocomplete</span> : définit si le formulaire est doté ou non de la
+            fonctionalité Autocomplete.</li>
+        </ul>
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h4>Principaux éléments des formulaires</h4>
+        <ul>
+          <li><span style="color:yellow">input</span> : L'élément de formulaire le plus utilisé. Affiché sous plusieurs formes dépendant de l'attribut type.</li>
+          <li><span style="color:yellow">label</span> : Définit un libellé d'un contrôle du formulaire.</li>
+          <li><span style="color:yellow">select</span> : Définit une liste déroulante.</li>
+          <li><span style="color:yellow">textarea</span> : Définit une zone de texte multi-lignes.</li>
+          <li><span style="color:yellow">button</span> : Définit un bouton dans le formulaire.</li>
+        </ul>
+      </section>
+      <!-- ************************************************************ -->
+      <section>
+        <h4>Principaux éléments des formulaires (Suite)</h4>
+        <ul>
+          <li><span style="color:yellow">fieldset</span> : Pour grouper des données ayant une relation sémantique.</li>
+          <li><span style="color:yellow">legend</span> : Définit un titre pour un fieldset.</li>
+          <li><span style="color:yellow">datalist</span> : Définit une liste de valeurs prédéfinies pour un input.</li>
+          <li><span style="color:yellow">option</span> : Définit une option dans une liste</li>
+          <li><span style="color:yellow">optgroup</span> : Définit des groupes d'options dans une liste.</li>
+        </ul>
+      </section>
+
+    </div>
+  </div>
+
+
+
+  <script src="../../dist/reveal.js"></script>
+  <script src="../../plugin/notes/notes.js"></script>
+  <script src="../../plugin/markdown/markdown.js"></script>
+  <script src="../../plugin/highlight/highlight.js"></script>
+  <script src="../../plugin/zoom/zoom.js"></script>
+  <script src="../../plugin/search/search.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [
+        RevealZoom,
+        RevealNotes,
+        RevealSearch,
+        RevealMarkdown,
+        RevealHighlight,
+      ],
+    });
+  </script>
+</body>
+
+</html>
