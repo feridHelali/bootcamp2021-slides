@@ -250,6 +250,13 @@ const config = {
 </code></pre>
             </section>
             <section>
+                <q style="font-size: 1.3em;">
+                    Give me six hours to chop down a tree and I will spend 
+                    the first four sharpening the ax.
+                    <footer>Abraham Lincolen</footer>
+                </q>
+            </section>
+            <section>
                 <h4>Structure de donnée en Javascript</h4>
                 <h5>Les Collections indexées</h5>
                 <pre>
@@ -319,15 +326,15 @@ let mySet = new Set([iterable])
             <section>
                 <h4>Tableaux et les itérations</h4>
             <pre><code>
-let northAficanCountries =[ 'Tunisia','Algeria','Maroc',
+let northAfricanCountries =[ 'Tunisia','Algeria','Maroc',
                             'Libya','Moritania','Egypt'  ];
-for (let i=0 ; i < northAficanCountries.length ; i++){
+for (let i=0 ; i < northAfricanCountries.length ; i++){
         console.log( northAficanCountries[i] );
 }
-for (country  of northAficanCountries ){
+for (country  of northAfricanCountries ){
         console.log( country );
 }
-northAficanCountries.forEach( function( country ) {
+northAfricanCountries.forEach( function( country ) {
         return console.log( country );
     }
 );
