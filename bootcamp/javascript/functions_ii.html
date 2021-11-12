@@ -18,6 +18,140 @@
             <section>
                 <h3>JavaScript: Functions II</h3>
             </section>
+            <section>
+                <q class="quote">
+                    If you can't explain it simply and easily,
+                    that you don't understand it well enough.
+                </q>
+                <author>Albert Einstein</author>
+            </section>
+            <section>
+                <q class="quote">
+                    What is it that I know, but I don't know that I know?
+                </q>
+                <author>Anonymous Blogger</author>
+            </section>
+            <section>
+                <h3>Les déclarations de fonctions 1/3</h3>
+                <pre><code>
+// function declaration
+function createCell(value, text) {
+        var cell = document.createElement("td");
+        cell.setAttribute("class", "detailsColumn");
+        cell.dataset.value = value;
+        cell.innerText = text;
+        return cell;
+    }
+               </code></pre>
+            </section>
+            <section>
+                <h3>Les déclarations de fonctions 2/3</h3>
+                <pre><code>
+// function expression
+const connectToDatabase = function( dbUri ){
+    try{
+        return dbUri.connect();
+    }catch( error ){
+        throw new Error('Error: fail to connect to db');
+    }
+}
+               </code></pre>
+            </section>
+            <section>
+                <h3>Les déclarations de fonctions 3/3</h3>
+                <pre><code>
+// flat-arrow function
+const connectToDatabase = ( dbUri )=>{
+    try{
+        return dbUri.connect();
+    }catch( error ){
+        throw new Error('Error: fail to connect to db');
+    }
+}
+
+// OR
+const connectToDatabase = dbUri => dbUri.connect();
+
+               </code></pre>
+            </section>
+            <section>
+                <h3>Execution d’une fonction (invoke, run, execute, call)</h3>
+                <pre><code>
+                let cellule = createCell(1,"Liste de Clients");
+               </code></pre>
+                <p>les parenthèses réprensentent un operateur d’appel de fonction.</p>
+
+
+            </section>
+            <section>
+                <h3>Execution d’une fonction (invoke, run, execute, call)</h3>
+                <p style="font-style: italic;">NB: une fonction peut ne pas avoir des arguments</p>
+                <pre><code>
+                function renderView(){
+                    // do drawing staff here
+                 }
+
+                // function invocation
+                renderView();
+               </code></pre>
+            </section>
+            <section>
+                <h3>Passage Par Valeur, Passage Par Référence</h3>
+                <p>
+                    Les paramètres primitifs (comme les nombres) sont passés à la fonction par valeur.
+                    La valeur est passée à la fonction mais si cette dernière change la valeur du paramètre,
+                    cela n’aura pas d’impact au niveau global ou au niveau de ce qui a appelé la fonction.
+                </p>
+                <p>
+                    Si l’argument passé à la fonction est un objet (une valeur non-primitive, comme un objet Array ou un
+                    objet
+                    défini par l’utilisateur), et que la fonction change les propriétés de cet objet,
+                    ces changements seront visibles en dehors de la fonction
+                </p>
+            </section>
+            <section>
+                <h3>Exemple I</h3>
+                <pre><code>
+// if the type of value of myName is primitif
+ let myName="Ferid HELALI";
+
+ function transform(vlaue){
+      console.log('Running transform funtion ...');
+      value = "Salem BEN AMOR";
+ }
+
+ console.log(` myName before transform invocation : ${myName}`);
+ transform(myName);
+ console.log(` myName after transform invocation : ${myName}`);
+</code></pre>
+<p>
+    myName still the same and not affected by the assaignment
+    in the transform function this behavior is called the parameter
+    is passed by value and this is true for all primitives
+    Types ( number , string, boolean, undefined, null 
+</p>
+            </section>
+            <section>
+                <h3>Exemple II</h3>
+                <pre><code>
+// if the type of value of myName is object
+let student={id:1,username:"Ali OMRANE",gender: 'Male'};
+function transform(value){
+        console.log('Running transform funtion ...');
+        value.username = "Salem BEN AMOR";
+}
+console.log(`student before transform call:
+             ${JSON.stringify(student)}`);
+transform(student);
+console.log(`student after transform call: 
+             ${JSON.stringify(student)}`);
+            </code></pre>
+            <p>
+                student has changed when affected in the transform function
+             this behavior is called the parameter is passed by reference
+             and this is true for object type, arrays.
+            </p>
+            </section>
         </div>
     </div>
     <script src="../../dist/reveal.js"></script>
