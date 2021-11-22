@@ -135,9 +135,13 @@ const connectToDatabase = dbUri => dbUri.connect();
                 <h3>Exemple II</h3>
                 <pre><code>
 // if the type of value of myName is object
-let student={id:1,username:"Ali OMRANE",gender: 'Male'};
+let student={
+    id:1,
+    username:"Ali OMRANE",
+    gender: 'Male'
+};
 function transform(value){
-        console.log('Running transform funtion ...');
+        console.log('Running transform function ...');
         value.username = "Salem BEN AMOR";
 }
 console.log(`student before transform call:
