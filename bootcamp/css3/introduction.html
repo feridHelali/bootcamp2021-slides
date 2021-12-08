@@ -581,7 +581,278 @@
             </code>
           </pre>
         </section>
+        <section>
+          <h3>Police css</h3>
+          <h5>Font-style</h5>
+          La <a>font-style</a> propriété est principalement utilisée pour spécifier du texte en italique.<br>
+          Cette propriété a trois valeurs:
+          <ul>
+            <li>normal-Le texte s'affiche normalement</li>
+            <li>italique - Le texte est affiché en italique</li>
+            <li>oblique - Le texte est penché</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Police css</h3>
+          <h5>Font-style</h5>
+          <pre>
+            <code>
+    p.normal {
+     font-style: normal;
+    }
+              
+    p.italic {
+      font-style: italic;
+    }
+              
+    p.oblique {
+     font-style: oblique;
+   }
+            </code>
+          </pre>
+        </section>
+        <section>
+          <h3>Police css</h3>
+          <h5>Font-Weight</h5>
+          La <a>font-weight</a> propriété spécifie le poids d'une police.
+          <pre>
+            <code>
+    p.normal {
+     font-weight: normal;
+    }
+              
+    p.thick {
+      font-weight: bold;
+    }
+      </code>
+          </pre>
+        </section>
         
+        <section>
+          <h3>Police css</h3>
+          <h5>Font-variant</h5>
+          La <a>font-variant</a> propriété spécifie si un texte doit être affiché ou non dans une police à petites majuscules.
+          <pre>
+            <code>
+    p.normal {
+     font-variant: normal;
+    }
+              
+    p.thick {
+      font-variant: small-caps;
+    }
+      </code>
+          </pre>
+        </section>
+        <section>
+          <h3>Police css</h3>
+          <h5>Font-size</h5>
+          La <a>font-size</a> propriété définit la taille du texte.<br>
+          On peut définir la taille du police en Pixels<br>
+          <pre>
+            <code>
+    h1 {
+      font-size: 40px;
+    }
+              
+    h2 {
+      font-size: 30px;
+    }
+              
+    p {
+      font-size: 14px;
+    }
+             </code>
+          </pre>
+        </section>
+        <section>
+          <h3>Police css</h3>
+          <h5>Font-size</h5>       
+          On peut définir la taille du police avec des Em<br>
+          pixels / 16 = em
+          <pre>
+            <code>
+    h1 {
+      font-size: 2.5em; /* 40px/16=2.5em */
+    }
+              
+    h2 {
+      font-size: 1.875em; /* 30px/16=1.875em */
+    }
+              
+    p {
+      font-size: 0.875em; /* 14px/16=0.875em */
+    }
+            </code>
+          </pre>
+        </section>
+        <section>
+          <h3>Police css</h3>
+          <h5>Font-size</h5>       
+          La taille du texte peut être définie avec une vw (Viewport) unité, ce qui signifie la "largeur de la fenêtre".
+          De cette façon, la taille du texte suivra la taille de la fenêtre du navigateur :
+          <pre>
+            <code>
+              &lt;h1 style="font-size:10vw"&gt;Hello World&lt;/h1&gt;
+            </code>
+          </pre>
+        </section>
+        <section>
+          <h5>Google Font</h5>  
+          Si vous ne souhaitez utiliser aucune des polices standard en HTML, vous pouvez utiliser les polices Google.<br>          
+          Il faut ajouter un lien spécial dans le Header, puis reportez-vous à la police dans le CSS.
+          <pre>
+            <code>
+              <head>
+&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"&gt;
+&lt;style&gt;
+ body {
+   font-family: "Sofia", sans-serif;
+ }
+&lt;/style&gt;
+                </head>
+            </code>
+          </pre>
+        </section>
+        <section>
+          <h3>Bordures CSS</h3>
+          Les propriétés de bordure CSS vous permettent de spécifier le style, la largeur et la couleur de la 
+          bordure d'un élément.<br>
+          <img src="https://i.ibb.co/Wxrv863/bord.png" >
+        </section>
+        <section>
+          <h3>Bordures CSS</h3>
+          <h5>border-style</h5>
+          La <a>border-style</a> propriété spécifie le type de bordure à afficher.
+          Les valeurs suivantes sont autorisés : <br>
+          dotted - dashed - solid - double - groove - ridge - inset - outset - none - hidden 
+        </section>
+        <section>
+          <h3>Bordures CSS</h3>
+          <h5>border-style</h5>
+          <pre>
+            <code>
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+            </code>
+          </pre>
+        </section>
+        <section>
+          <h3>Bordures CSS</h3>
+          <h5>border-style</h5>
+          <img src="https://i.ibb.co/hgmnC7B/bordd.png" />
+        </section>
+        <section>
+          <h3>Bordures CSS</h3>
+          <h5>border-width</h5>
+          La <a>border-width</a> propriété spécifie la largeur des quatre bordures.
+          <pre>
+            <code>
+p.one {
+  border-style: solid;
+  border-width: 5px;
+}
+
+p.two {
+  border-style: solid;
+  border-width: medium;
+}
+
+p.three {
+  border-style: dotted;
+  border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+}
+
+p.four {
+  border-style: dotted;
+  border-width: thick;
+
+p.five {
+  border-style: solid;
+  border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+}
+
+            </code>
+          </pre>
+        </section>
+        <section>
+          <h3>Bordures CSS</h3>
+          <h5>border-width</h5>
+          La <a>border-color</a> propriété est utilisée pour définir la couleur des quatre bordures.<br>
+          Comme on a vu précédemment, la couleur peut définie par : nom - code HEX - RVB - HSL <br>
+          <pre>
+            <code>
+p.one {
+  border-style: solid;
+  border-color: red;
+}             
+p.two {
+  border-style: solid;
+  border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+}
+p.three {
+  border-style: solid;
+  border-color: #ff0000; /* red */
+}
+p.four {
+  border-style: solid;
+  border-color: rgb(255, 0, 0); /* red */
+}
+p.five {
+  border-style: solid;
+  border-color: hsl(0, 100%, 50%); /* red */
+}
+            </code>
+          </pre>
+        </section>
+          <h3>Bordures CSS</h3>
+          <h5>border-width</h5>
+          En CSS, il existe des propriétés pour spécifier chacune des bordures (haut, droite, bas et gauche) :
+          <pre>
+            <code>
+p {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+            </code>
+          </pre>
+        <section>
+          <h3>Bordures CSS</h3>
+          <h5>border shorthand</h5>
+          La <a>border</a> propriété est une propriété abrégée pour les propriétés de bordure individuelles suivantes dans l'ordre:<br>
+          border-width | border-style(obligatoire) | border-color
+          <pre>
+            <code>
+p {
+  border: 5px solid red;
+}
+            </code>
+          </pre>
+        </section>
+        <section>
+          <h3>Bordures CSS</h3>
+          <h5>Les bordures arrondies</h5>
+          La <a>border-radius</a> propriété est utilisée pour ajouter des bordures arrondies à un élément 
+          <pre>
+            <code>
+p {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+            </code>
+          </pre>
+        </section>
       </div>
     </div>
     <script src="../../dist/reveal.js"></script>
