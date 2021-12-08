@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Initiation</title>
+    <link rel="stylesheet" href="../../dist/reset.css" />
+    <link rel="stylesheet" href="../../dist/reveal.css" />
+    <link rel="stylesheet" href="../../dist/theme/black.css" id="theme" />
+    <link
+      rel="stylesheet"
+      href="../../plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+            <h3>Bordures CSS</h3>
+            Les propriétés de bordure CSS vous permettent de spécifier le style, la largeur et la couleur de la 
+            bordure d'un élément.<br>
+            <img src="https://i.ibb.co/Wxrv863/bord.png" >
+        </section>
+        <section>
+            <h3>Bordures CSS</h3>
+            <h5>border-style</h5>
+            La <a>border-style</a> propriété spécifie le type de bordure à afficher.
+            Les valeurs suivantes sont autorisés : <br>
+            dotted - dashed - solid - double - groove - ridge - inset - outset - none - hidden 
+        </section>
+        <section>
+            <h3>Bordures CSS</h3>
+            <h5>border-style</h5>
+            <pre>
+              <code>
+  p.dotted {border-style: dotted;}
+  p.dashed {border-style: dashed;}
+  p.solid {border-style: solid;}
+  p.double {border-style: double;}
+  p.groove {border-style: groove;}
+  p.ridge {border-style: ridge;}
+  p.inset {border-style: inset;}
+  p.outset {border-style: outset;}
+  p.none {border-style: none;}
+  p.hidden {border-style: hidden;}
+  p.mix {border-style: dotted dashed solid double;}
+              </code>
+            </pre>
+        </section>
+        <section>
+            <h3>Bordures CSS</h3>
+            <h5>border-style</h5>
+            <img src="https://i.ibb.co/hgmnC7B/bordd.png" />
+        </section>
+        <section>
+            <h3>Bordures CSS</h3>
+            <h5>border-width</h5>
+            La <a>border-width</a> propriété spécifie la largeur des quatre bordures.
+            <pre>
+              <code>
+  p.one {
+    border-style: solid;
+    border-width: 5px;
+  }
+  
+  p.two {
+    border-style: solid;
+    border-width: medium;
+  }
+  
+  p.three {
+    border-style: dotted;
+    border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+  }
+  
+  p.four {
+    border-style: dotted;
+    border-width: thick;
+  
+  p.five {
+    border-style: solid;
+    border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+  }
+  
+              </code>
+            </pre>
+        </section>
+        <section>
+            <h3>Bordures CSS</h3>
+            <h5>border-width</h5>
+            La <a>border-color</a> propriété est utilisée pour définir la couleur des quatre bordures.<br>
+            Comme on a vu précédemment, la couleur peut définie par : nom - code HEX - RVB - HSL <br>
+            <pre>
+              <code>
+  p.one {
+    border-style: solid;
+    border-color: red;
+  }             
+  p.two {
+    border-style: solid;
+    border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+  }
+  p.three {
+    border-style: solid;
+    border-color: #ff0000; /* red */
+  }
+  p.four {
+    border-style: solid;
+    border-color: rgb(255, 0, 0); /* red */
+  }
+  p.five {
+    border-style: solid;
+    border-color: hsl(0, 100%, 50%); /* red */
+  }
+              </code>
+            </pre>
+        </section>
+        <section>
+            <h3>Bordures CSS</h3>
+            <h5>border-width</h5>
+            En CSS, il existe des propriétés pour spécifier chacune des bordures (haut, droite, bas et gauche) :
+            <pre>
+              <code>
+  p {
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+  }
+              </code>
+            </pre>
+        </section>
+        <section>
+            <h3>Bordures CSS</h3>
+            <h5>border shorthand</h5>
+            La <a>border</a> propriété est une propriété abrégée pour les propriétés de bordure individuelles suivantes dans l'ordre:<br>
+            border-width | border-style(obligatoire) | border-color
+            <pre>
+              <code>
+  p {
+    border: 5px solid red;
+  }
+              </code>
+            </pre>
+        </section>
+        <section>
+            <h3>Bordures CSS</h3>
+            <h5>Les bordures arrondies</h5>
+            La <a>border-radius</a> propriété est utilisée pour ajouter des bordures arrondies à un élément 
+            <pre>
+              <code>
+  p {
+    border: 2px solid red;
+    border-radius: 5px;
+  }
+              </code>
+            </pre>
+        </section>
+      </div>
+    </div>
+<script src="../../dist/reveal.js"></script>
+<script src="../../plugin/notes/notes.js"></script>
+<script src="../../plugin/markdown/markdown.js"></script>
+<script src="../../plugin/highlight/highlight.js"></script>
+<script src="../../plugin/zoom/zoom.js"></script>
+<script src="../../plugin/search/search.js"></script>
+<script>
+// More info about initialization & config:
+// - https://revealjs.com/initialization/
+// - https://revealjs.com/config/
+Reveal.initialize({
+hash: true,
+
+// Learn about plugins: https://revealjs.com/plugins/
+plugins: [
+  RevealZoom,
+  RevealNotes,
+  RevealSearch,
+  RevealMarkdown,
+  RevealHighlight,
+],
+});
+</script>
+</body>
+</html>

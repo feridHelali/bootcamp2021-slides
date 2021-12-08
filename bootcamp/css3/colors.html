@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Initiation</title>
+    <link rel="stylesheet" href="../../dist/reset.css" />
+    <link rel="stylesheet" href="../../dist/reveal.css" />
+    <link rel="stylesheet" href="../../dist/theme/black.css" id="theme" />
+    <link
+      rel="stylesheet"
+      href="../../plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section>
+            <h3>Les Couleurs en CSS </h3>
+            En CSS, une couleur peut être spécifiée en utilisant un nom de couleur prédéfini :<br>
+            <img src="https://juliencrego.com/wp-content/uploads/cours-web-couleurs-css-10.png" width=400><br>
+        
+            CSS/HTML prend en charge 140 noms de couleurs standard .
+        </section>
+        <section>
+            <h3>Les Couleurs en CSS </h3>
+            <h5>Couleur du texte</h5>
+            <pre>
+              <code>
+                &lt;h1 style="color:Tomato;"&gt;Hello World&lt;/h1&gt;
+              </code>
+            </pre>
+        </section>
+        <section>
+            <h3>Les Couleurs en CSS </h3>
+            <h5>Couleur du bordure</h5>
+            <pre>
+              <code>
+                &lt;h1 style="border:2px solid Tomato;"&gt;Hello World&lt;/h1&gt;
+              </code>
+            </pre>
+        </section>
+        <section>
+            <h3>Les Couleurs en CSS </h3>
+            <h5>Couleur de l'arrière plan</h5>
+            <pre>
+              <code>
+  &lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+  &lt;p style="background-color:Tomato;"&gt;Un paragraphe avec un background colorié&lt;/p&gt;
+              </code>
+            </pre>
+        </section>
+        <section>
+            <h3>Les Couleurs en CSS</h3>
+            <h4>Valeurs de couleurs</h4>
+            Dans CSS, les couleurs peuvent également être spécifiées à l'aide de valeurs RVB, de valeurs HEX, 
+            de valeurs HSL:
+            <pre>
+              <code>
+  &lt;h1 style="background-color:rgb(255, 99, 71);"&gt;Couleur en RVB&lt;/h1&gt;
+  &lt;h1 style="background-color:#ff6347;"&gt;Couleur en HEX&lt;/h1&gt;
+  &lt;h1 style="background-color:hsl(9, 100%, 64%);"&gt;Couleur en HSL&lt;/h1&gt;
+              </code>
+            </pre>
+        </section>
+        <section>
+            <h4>Opacité</h4>
+            <p>La propriété de l'opacité définit la transparence d'un élément. Autrement dit, elle permet de 
+            définir le degré de visibilité de l'arrière-plan sur lequel est placé l'élément.</p>
+            <pre>
+              <code>
+  &lt;h1 style="background-color:rgba(255, 99, 71, 0.5);"&gt;Couleur en RVB&lt;/h1&gt;
+  &lt;h1 style="background-color:hsla(9, 100%, 64%, 0.5);"&gt;Couleur en HSL&lt;/h1&gt;
+              </code>
+            </pre>
+        </section>
+      </div>
+    </div>
+<script src="../../dist/reveal.js"></script>
+<script src="../../plugin/notes/notes.js"></script>
+<script src="../../plugin/markdown/markdown.js"></script>
+<script src="../../plugin/highlight/highlight.js"></script>
+<script src="../../plugin/zoom/zoom.js"></script>
+<script src="../../plugin/search/search.js"></script>
+<script>
+  // More info about initialization & config:
+  // - https://revealjs.com/initialization/
+  // - https://revealjs.com/config/
+  Reveal.initialize({
+    hash: true,
+
+    // Learn about plugins: https://revealjs.com/plugins/
+    plugins: [
+      RevealZoom,
+      RevealNotes,
+      RevealSearch,
+      RevealMarkdown,
+      RevealHighlight,
+    ],
+  });
+</script>
+</body>
+</html>

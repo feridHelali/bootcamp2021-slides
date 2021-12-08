@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Initiation</title>
+    <link rel="stylesheet" href="../../dist/reset.css" />
+    <link rel="stylesheet" href="../../dist/reveal.css" />
+    <link rel="stylesheet" href="../../dist/theme/black.css" id="theme" />
+    <link
+      rel="stylesheet"
+      href="../../plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+
+<section>
+    <h3>Les Sélecteurs</h3>
+    Les Sélecteurs CSS sont utilisés pour identifier les éléments HTML qu'on souhaite styliser.
+  </section>
+  <section> 
+    Ils sont diviser en 5 catégories:
+    <ol>
+      <li>
+        Sélecteurs simples (sélectionnez les éléments en fonction du nom d'élément, de l'identifiant, de la classe)
+      </li>
+      <li>
+        Sélecteurs de combinateurs (sélectionnez des éléments en fonction d'une relation spécifique entre eux)
+      </li>
+      <li>
+        Sélecteurs de pseudo-classe (sélectionnez des éléments en fonction d'un certain état)
+      </li>
+      <li>
+        Sélecteurs de pseudo-éléments (sélectionnez et stylisez une partie d'un élément)
+      </li>
+      <li>
+        Sélecteurs d'attributs (sélectionnez des éléments en fonction d'un attribut ou d'une valeur d'attribut)
+      </li>
+    </ol>
+  </section>
+  <section>
+    <h3>Les sélecteurs simples</h3>
+    <h5>Les sélecteurs d'éléments </h5>
+    Le sélecteur d'élément sélectionne les éléments HTML en fonction du nom de l'élément.<br>
+    <pre><code>
+      p {
+        text-align: center;
+        color: red;
+      }
+    </code></pre>
+    Ici, tous les éléments &lt;p&gt; de la page seront alignés au centre, avec une couleur de texte rouge.
+  </section>
+  <section>
+    <h3>Les sélecteurs simples</h3>
+    <h5>Les sélecteurs d'identifiant</h5>
+    Le sélecteur id utilise l'attribut id d'un élément HTML pour sélectionner un élément spécifique.<br>
+    <pre>
+      <code>
+        #para1 {
+          text-align: center;
+          color: red;
+        }
+      </code>
+    </pre>
+    La règle CSS ci-dessus sera appliquée à l'élément HTML avec id="para1". 
+
+  </section>
+  <section>
+    <h3>Les sélecteurs simples</h3>
+    <h5>Les sélecteurs de classe</h5>
+    Le sélecteur de classe sélectionne des éléments HTML avec un attribut de classe spécifique.
+    <pre>
+      <code>
+        .center {
+          text-align: center;
+          color: red;
+        }
+      </code>
+    </pre>
+    Dans cet exemple, tous les éléments HTML avec class="center" seront rouges et alignés au centre
+
+  </section>
+  <section>
+    <h3>Les sélecteurs combinateurs</h3>
+    Un sélecteur CSS peut contenir plusieurs sélecteurs simples. Entre les sélecteurs simples, nous pouvons 
+    inclure un combinateur.<br>
+    Il existe quatre combinateurs différents en CSS :
+    <ul>
+      <li>sélecteur descendant (espace)</li>
+      <li>sélecteur enfant (>)</li>
+      <li>sélecteur de frère adjacent (+)</li>
+      <li>sélecteur général de frères et sœurs (~)</li>
+    </ul>
+  </section>
+  <section>
+    <h3>Les sélecteurs de pseudo-classe</h3>
+    Une pseudo-classe est utilisée pour définir un état particulier d'un élément.<br>
+    Par exemple, il peut être utilisé pour :
+    <ul>
+      <li>Styliser un élément lorsqu'un utilisateur passe la souris dessus</li>
+      <li>Styler différemment les liens visités et non visités</li>
+      <li>Styler un élément lorsqu'il obtient le focus</li>
+    </ul>
+  </section>
+  <section>
+    <h4>La syntaxe</h4>
+    <pre>
+      <code>
+        selector:pseudo-class {
+          property: value;
+        }
+      </code>
+    </pre>
+  </section>
+  <section>
+    <h4>Exemple</h4>
+    Les liens peuvent être affichés de différentes manières
+    <pre>
+      <code>
+        /* unvisited link */
+        a:link {
+         color: #FF0000;
+        }
+
+        /* visited link */
+        a:visited {
+         color: #00FF00;
+        }
+
+        /* mouse over link */
+        a:hover {
+          color: #FF00FF;
+        }
+
+        /* selected link */
+        a:active {
+          color: #0000FF;
+        }
+      </code>
+    </pre>
+  </section>
+  <section>
+    <h3>Les sélecteurs pseudo-éléments</h3>
+    Un pseudo-élément CSS est utilisé pour styliser des parties spécifiées d'un élément.<br>
+    Par exemple, il peut être utilisé pour :
+    <ul>
+      <li>Styliser la première lettre, ou ligne, d'un élément</li>
+      <li>Insérer du contenu avant ou après le contenu d'un élément</li>
+    </ul>
+  </section>
+  <section>
+    <h4>La syntaxe</h4>
+    <pre>
+      <code>
+        selector::pseudo-element {
+          property: value;
+        }
+      </code>
+    </pre>
+  </section>
+  <section>
+    Le <a>::first-line</a> pseudo-élément est utilisé pour ajouter un style particulier à la première ligne 
+    d'un texte.<br>
+    L'exemple suivant formate la première ligne du texte dans tous les éléments <p> :
+      <pre>
+        <code>
+          p::first-line {
+            color: #ff0000;
+            font-variant: small-caps;
+          }
+        </code>
+      </pre>
+  </section>
+  <section>
+    Le <a>::first-letter</a> pseudo-élément est utilisé pour ajouter un style particulier à la première lettre 
+    d'un texte.<br>
+    L'exemple suivant formate la première lettre du texte dans tous les éléments <p> :
+      <pre>
+        <code>
+          p::first-letter {
+            color: #ff0000;
+            font-size: xx-large;
+          }
+        </code>
+      </pre>
+  </section>
+  <section>
+    <h3>Les sélecteurs d'attributs</h3>
+    <p>Il est possible de styliser les éléments HTML qui ont des attributs ou des valeurs d'attribut spécifiques.</p>
+    L'exemple suivant sélectionne tous les éléments &lt;a&gt; avec un attribut target="_blank"
+      <pre>
+        <code>
+          a[target="_blank"] {
+            background-color: yellow;
+          }
+        </code>
+      </pre>
+  </section>
+  <section>
+    <h4>La valeur <a>!important</a></h4>
+    <p>Le mot !important peut être ajouté à n'importe quelle valeur dans une règle CSS. Il rend la règle prioritaire.</p>
+  </section>
+  <section>
+    <h4>Les priorités des sélecteurs</h4>
+    <p>Tous les sélecteurs n'ont pas la même priorité. En cas de contradiction entre deux règles, celle qui s'applique 
+    est celle qui a le sélecteur le plus prioritaire. De façon générale, les sélecteurs ont une priorité d'autant 
+    plus grande qu'ils sont plus précis. Le sélecteur très général * a une priorité de 0. A l'inverse, un sélecteur 
+    sur un identifiant , qui en principe ne concerne qu'un seul élément de la page, a une priorité de 100.</p>
+  </section>
+  <section>
+    Un commentaire CSS est placé à l'intérieur de l' &lt;style&gt; élément.
+    <pre>
+      <code>
+        /* This is a single-line comment */
+        p {
+          color: red;
+        }
+      </code>
+    </pre>
+  </section>
+  <section>
+    <h2>Remarque</h2>
+    L'identation est très importante pour la clarté du code.
+  </section>
+
+</div>
+</div>
+<script src="../../dist/reveal.js"></script>
+<script src="../../plugin/notes/notes.js"></script>
+<script src="../../plugin/markdown/markdown.js"></script>
+<script src="../../plugin/highlight/highlight.js"></script>
+<script src="../../plugin/zoom/zoom.js"></script>
+<script src="../../plugin/search/search.js"></script>
+<script>
+  // More info about initialization & config:
+  // - https://revealjs.com/initialization/
+  // - https://revealjs.com/config/
+  Reveal.initialize({
+    hash: true,
+
+    // Learn about plugins: https://revealjs.com/plugins/
+    plugins: [
+      RevealZoom,
+      RevealNotes,
+      RevealSearch,
+      RevealMarkdown,
+      RevealHighlight,
+    ],
+  });
+</script>
+</body>
+</html>
