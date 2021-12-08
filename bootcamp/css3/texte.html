@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Initiation</title>
+    <link rel="stylesheet" href="../../dist/reset.css" />
+    <link rel="stylesheet" href="../../dist/reveal.css" />
+    <link rel="stylesheet" href="../../dist/theme/black.css" id="theme" />
+    <link
+      rel="stylesheet"
+      href="../../plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+            <h3>Texte css</h3>
+            <h5>Alignement du texte</h5>
+            La <a>text-align</a> propriété est utilisée pour définir l'alignement horizontal d'un texte.
+            Exemple: 
+            <pre>
+              <code>
+                h1 {
+                  text-align: center;
+                }              
+                h2 {
+                  text-align: left;
+                }              
+                h3 {
+                  text-align: right;
+                }
+                div {
+                  text-align: justify;
+                }
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Texte css</h3>
+            <h5>Alignement du texte en dernier</h5> 
+            <pre>
+              <code>
+                p.a {
+                  text-align-last: right;
+                }             
+                p.b {
+                  text-align-last: center;
+                }              
+                p.c {
+                  text-align-last: justify;
+                }
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Texte css</h3>
+            <h5>Alignement vertical</h5> 
+            <pre>
+              <code>
+                img.a {
+                  vertical-align: baseline;
+                }            
+                img.b {
+                  vertical-align: text-top;
+                }             
+                img.c {
+                  vertical-align: text-bottom;
+                }              
+                img.d {
+                  vertical-align: sub;
+                }   
+                img.e {
+                  vertical-align: super;
+                }
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Texte css</h3>
+            <h5>Décoration du texte</h5> 
+            La <a>text-decoration</a> propriété est utilisée pour définir ou supprimer des décorations du texte.<br>
+            <pre>
+              <code>
+                a {
+                  text-decoration: none;
+                }
+                h2 {
+                  text-decoration: overline;
+                } 
+                h3 {
+                  text-decoration: line-through;
+                }              
+                h4 {
+                  text-decoration: underline;
+                }
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Texte css</h3>
+            <h5>Transformation du texte</h5> 
+            La <a>text-transform</a> propriété est utilisée pour spécifier des lettres majuscules et minuscules dans un texte.<br>
+            <pre>
+              <code>
+                p.uppercase {
+                  text-transform: uppercase;
+                }              
+                p.lowercase {
+                  text-transform: lowercase;
+                } 
+                p.capitalize {
+                  text-transform: capitalize;
+                }
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Texte css</h3>
+            <h5>Indentation du texte</h5> 
+            La <a>text-indent</a> propriété est utilisée pour spécifier l'indentation de la première ligne d'un texte .<br>
+            <pre>
+              <code>
+                p {
+                  text-indent: 50px;
+                }
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Texte css</h3>
+            <h5>Espacement des lettres</h5> 
+            La <a>letter-spacing</a> propriété est utilisée pour spécifier l'espace entre les caractères dans un texte.<br>
+            <pre>
+              <code>
+                h1 {
+                  letter-spacing: 5px;
+                }
+                
+                h2 {
+                  letter-spacing: -2px;
+                }
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Texte css</h3>
+            <h5>Hauteur de la ligne</h5> 
+            La <a>line-height</a> propriété est utilisée pour spécifier l'espace entre les lignes dans un texte.<br>
+            <pre>
+              <code>
+                p.small {
+                  line-height: 0.8;
+                }
+                
+                p.big {
+                  line-height: 1.8;
+                }
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Texte css</h3>
+            <h5>Espacement des mots</h5> 
+            La <a>word-spacing</a> propriété est utilisée pour spécifier l'espace entre les mots dans un texte.<br>
+            <pre>
+              <code>
+                p.one {
+                  word-spacing: 10px;
+                }
+                
+                p.two {
+                  word-spacing: -2px;
+                }
+                
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Texte css</h3>
+            <h5>Ombre du texte</h5> 
+            La <a>text-shadow</a> propriété ajoute une ombre au texte.<br>
+            Dans son utilisation la plus simple, vous ne spécifiez que l'ombre horizontale (2px) et l'ombre verticale (2px) :
+            <pre>
+              <code>
+                h1 {
+                  text-shadow: 2px 2px;
+                }
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Texte css</h3>
+            <h5>Ombre du texte</h5> 
+            Ensuite, ajoutez une couleur (rouge) à l'ombre :
+            <pre>
+              <code>
+                h1 {
+                  text-shadow: 2px 2px red;
+                }
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Texte css</h3>
+            <h5>Ombre du texte</h5> 
+            Ensuite, ajoutez un effet de flou (5px) à l'ombre :
+            <pre>
+              <code>
+                h1 {
+                  text-shadow: 2px 2px 5px red;
+                }
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Police css</h3>
+            <h5>Familles de polices</h5>
+            <ol>
+              <li>Serif</li>
+              <li>Sans-serif</li>
+              <li>Monospace</li>
+              <li>Cursive</li>
+              <li>Fantasy</li>
+            </ol><br>
+            <img src="https://i.ibb.co/mXN0rPR/serif.png" width=500>
+          </section>
+          <section>
+            <h3>Police css</h3>
+            <h5>Familles de polices</h5>
+            <img src="https://i.ibb.co/4TL4sGy/font.png">
+          </section>
+          <section>
+            <h3>Police css</h3>
+            <h5>Font-family</h5>
+            <pre>
+              <code>
+       .p1 {
+            font-family: "Times New Roman", Times, serif;
+       }           
+       .p2 {
+          font-family: Arial, Helvetica, sans-serif;
+       }             
+        .p3 {
+         font-family: "Lucida Console", "Courier New", monospace;
+       }
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Police css</h3>
+            <h5>Font-style</h5>
+            La <a>font-style</a> propriété est principalement utilisée pour spécifier du texte en italique.<br>
+            Cette propriété a trois valeurs:
+            <ul>
+              <li>normal-Le texte s'affiche normalement</li>
+              <li>italique - Le texte est affiché en italique</li>
+              <li>oblique - Le texte est penché</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Police css</h3>
+            <h5>Font-style</h5>
+            <pre>
+              <code>
+      p.normal {
+       font-style: normal;
+      }
+                
+      p.italic {
+        font-style: italic;
+      }
+                
+      p.oblique {
+       font-style: oblique;
+     }
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Police css</h3>
+            <h5>Font-Weight</h5>
+            La <a>font-weight</a> propriété spécifie le poids d'une police.
+            <pre>
+              <code>
+      p.normal {
+       font-weight: normal;
+      }
+                
+      p.thick {
+        font-weight: bold;
+      }
+        </code>
+            </pre>
+          </section>
+          
+          <section>
+            <h3>Police css</h3>
+            <h5>Font-variant</h5>
+            La <a>font-variant</a> propriété spécifie si un texte doit être affiché ou non dans une police à petites majuscules.
+            <pre>
+              <code>
+      p.normal {
+       font-variant: normal;
+      }
+                
+      p.thick {
+        font-variant: small-caps;
+      }
+        </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Police css</h3>
+            <h5>Font-size</h5>
+            La <a>font-size</a> propriété définit la taille du texte.<br>
+            On peut définir la taille du police en Pixels<br>
+            <pre>
+              <code>
+      h1 {
+        font-size: 40px;
+      }
+                
+      h2 {
+        font-size: 30px;
+      }
+                
+      p {
+        font-size: 14px;
+      }
+               </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Police css</h3>
+            <h5>Font-size</h5>       
+            On peut définir la taille du police avec des Em<br>
+            pixels / 16 = em
+            <pre>
+              <code>
+      h1 {
+        font-size: 2.5em; /* 40px/16=2.5em */
+      }
+                
+      h2 {
+        font-size: 1.875em; /* 30px/16=1.875em */
+      }
+                
+      p {
+        font-size: 0.875em; /* 14px/16=0.875em */
+      }
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h3>Police css</h3>
+            <h5>Font-size</h5>       
+            La taille du texte peut être définie avec une vw (Viewport) unité, ce qui signifie la "largeur de la fenêtre".
+            De cette façon, la taille du texte suivra la taille de la fenêtre du navigateur :
+            <pre>
+              <code>
+                &lt;h1 style="font-size:10vw"&gt;Hello World&lt;/h1&gt;
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h5>Google Font</h5>  
+            Si vous ne souhaitez utiliser aucune des polices standard en HTML, vous pouvez utiliser les polices Google.<br>          
+            Il faut ajouter un lien spécial dans le Header, puis reportez-vous à la police dans le CSS.
+            <pre>
+              <code>
+                <head>
+  &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"&gt;
+  &lt;style&gt;
+   body {
+     font-family: "Sofia", sans-serif;
+   }
+  &lt;/style&gt;
+                  </head>
+              </code>
+            </pre>
+          </section>
+      </div>
+    </div>
+<script src="../../dist/reveal.js"></script>
+<script src="../../plugin/notes/notes.js"></script>
+<script src="../../plugin/markdown/markdown.js"></script>
+<script src="../../plugin/highlight/highlight.js"></script>
+<script src="../../plugin/zoom/zoom.js"></script>
+<script src="../../plugin/search/search.js"></script>
+<script>
+// More info about initialization & config:
+// - https://revealjs.com/initialization/
+// - https://revealjs.com/config/
+Reveal.initialize({
+hash: true,
+
+// Learn about plugins: https://revealjs.com/plugins/
+plugins: [
+  RevealZoom,
+  RevealNotes,
+  RevealSearch,
+  RevealMarkdown,
+  RevealHighlight,
+],
+});
+</script>
+</body>
+</html>
